@@ -1,0 +1,19 @@
+<openerp>
+    <data>
+        <record id="rest_hotel" model="ir.ui.view">
+            <field name="name">Resturant</field>
+            <field name="model">hotel_resturant_serv</field>
+            <field name="arch" type="xml">
+                <form string="" create="true" edit="true" delete="true">
+                    <!--create="false" edit="false" delete="false" to delete create && edite button in form     -->
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <!--<button name="send_email" type="object" string="ObjectButton"/>-->
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    </data>
+</openerp>

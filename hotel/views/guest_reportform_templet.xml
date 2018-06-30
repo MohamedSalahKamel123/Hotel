@@ -1,0 +1,194 @@
+<openerp>
+
+    <data>
+
+        <template id="report_hotel_guest">
+            <t t-call="report.html_container">
+                <t t-call="report.external_layout">
+                    <div class="page">
+                        <br/>
+                        <br/>
+                        <div class="row">
+                            <h2>
+                                <span>
+                                    <center>Guest Booking</center>
+                                </span>
+                            </h2>
+                        </div>
+
+                        <div class="row mt32 mb32">
+                            <div class="text-center">
+
+                            </div>
+                        </div>
+
+
+                        <!--=========================================================================================-->
+                        <table class="table table-condensed">
+                            <tr>
+                                <td>
+                                    <strong>Guest Name</strong>
+                                </td>
+                                <td>
+                                    <strong>ID</strong>
+                                </td>
+
+                                <td>
+                                    <strong>Age</strong>
+                                </td>
+
+                                <td>
+                                    <strong>Room No</strong>
+                                </td>
+                                <td>
+                                    <strong>Total Price</strong>
+                                </td>
+                                <td>
+                                    <strong>Paid Money</strong>
+                                </td>
+                                <td>
+                                    <strong>Remaining Money</strong>
+                                </td>
+
+
+                            </tr>
+                            <t t-foreach="docs" t-as="o">
+
+                                <tr>
+                                    <td>
+                                        <span t-esc="o.name"/>
+                                    </td>
+                                    <td>
+                                        <span t-esc="o.identification_id"/>
+                                    </td>
+
+                                    <td>
+                                        <span t-esc="o.age"/>
+                                    </td>
+
+                                    <td>
+                                        <span t-esc="o.room_no"/>
+                                    </td>
+
+                                    <td>
+                                        <span t-esc="o.total_price"/>
+                                    </td>
+                                    <td>
+                                        <span t-esc="o.paid_money"/>
+                                    </td>
+                                    <td>
+                                        <span t-esc="o.remaining_money"/>
+                                    </td>
+
+
+                                </tr>
+
+                            </t>
+
+                        </table>
+
+                        <!--===============================================================================================================-->
+
+                        <div class="row">
+                            <h2>
+                                <span>
+                                    <center>Services</center>
+                                </span>
+                            </h2>
+                        </div>
+
+                        <table class="table table-condensed">
+                            <tr>
+                                <td>
+                                    <strong>Conference Hall</strong>
+                                </td>
+                                <td>
+                                    <strong>Wedding Hall</strong>
+                                </td>
+
+                                <td>
+                                    <strong>Age</strong>
+                                </td>
+
+                                <td>
+                                    <strong>Parking</strong>
+                                </td>
+                                <td>
+                                    <strong>Use the hotel car</strong>
+                                </td>
+                                <td>
+                                    <strong>Subtotal</strong>
+                                </td>
+
+
+                            </tr>
+                            <t t-foreach="docs" t-as="o">
+                                <t t-foreach="o.serv_total" t-as="x">
+
+
+                                    <tr>
+                                        <td>
+                                            <span t-esc="x.conference_hall"/>
+                                        </td>
+                                        <td>
+                                            <span t-esc="x.wedding_hall"/>
+                                        </td>
+                                        <td>
+                                            <span t-esc="x.parking"/>
+                                        </td>
+                                        <td>
+                                            <span t-esc="x.hotel_car"/>
+                                        </td>
+                                        <td>
+                                            <span t-esc="x.spa"/>
+                                        </td>
+                                        <td>
+                                            <span t-esc="x.subtotal"/>
+                                        </td>
+
+
+                                    </tr>
+                                </t>
+                            </t>
+                            <t t-foreach="docs" t-as="o">
+
+                                <tr>
+                                    <td/>
+                                    <td/>
+                                    <td/>
+                                    <td>
+                                        <strong>Net Total:</strong>
+                                    </td>
+                                    <td>
+                                        <span t-esc="o.Total"/>
+                                    </td>
+                                </tr>
+                            </t>
+
+                        </table>
+
+                        <td/>
+                                    <td/>
+                                    <td/>
+                                    <td>
+                                        <strong>Total Price :- </strong>
+                                    </td>
+
+                        <t t-foreach="docs" t-as="o">
+                            <td>
+                                        <span t-esc="o.Total+o.remaining_money"/>   Pound
+                                    </td>
+
+                        </t>
+
+
+                        <!--=========================================================                    -->
+
+
+                    </div>
+                </t>
+            </t>
+        </template>
+    </data>
+
+</openerp>

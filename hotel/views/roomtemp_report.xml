@@ -1,0 +1,99 @@
+<openerp>
+
+    <data>
+
+        <template id="room_report_hotel_folio">
+            <t t-call="report.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-call="report.external_layout">
+                        <div class="page">
+                            <br/>
+                            <br/>
+                            <div class="row">
+                                <h2>
+                                    <span>
+                                        <center>Hotel Reservation</center>
+                                    </span>
+                                </h2>
+                            </div>
+
+                            <div class="row mt32 mb32">
+                                <div class="text-center">
+
+                                </div>
+                            </div>
+
+
+                            <!--&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+
+                            <table class="table table-condensed">
+                                <tr>
+
+                                    <td>
+                                        <strong>Id</strong>
+                                    </td>
+                                    <td>
+                                        <strong>Name</strong>
+                                    </td>
+                                    <td>
+                                        <strong>Room Number</strong>
+                                    </td>
+                                    <td>
+                                        <strong>Floor</strong>
+                                    </td>
+                                    <td>
+                                        <strong>Price</strong>
+                                    </td>
+                                    <td>
+                                        <strong>State</strong>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <span t-esc="o.id"/>
+                                    </td>
+                                    <td>
+                                        <span t-esc="o.name"/>
+                                    </td>
+                                    <td>
+                                        <span t-esc="o.room_no"/>
+                                    </td>
+                                    <td>
+                                        <span t-esc="o.floor"/>
+                                    </td>
+
+                                     <td>
+                                        <span t-esc="o.price"/>
+                                    </td>
+                                     <td>
+                                        <span t-esc="o.state"/>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td/>
+                                    <td/>
+                                    <td/>
+                                    <td>
+                                        <strong>Net Total:</strong>
+                                    </td>
+                                    <td>
+                                        <span t-esc="o.price"/>
+                                    </td>
+                                </tr>
+
+
+
+                            </table>
+
+
+                            <!-- -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+    </data>
+
+</openerp>

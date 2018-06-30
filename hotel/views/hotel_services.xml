@@ -1,0 +1,54 @@
+<openerp>
+    <data>
+
+        <record id="hotel_services_management" model="ir.ui.view">
+            <field name="name">Services</field>
+            <field name="model">hotel_services</field>
+            <field name="arch" type="xml">
+                <form string="Services">
+                    <sheet>
+                        <field name="image" widget="image" class="oe_avatar"/>
+                        <div class="oe_title">
+                            <label for="name" class="oe_edit_only"/>
+                            <h1>
+                                <!--<field name="name" placeholder="Customer's Name"  />-->
+                            </h1>
+                        </div>
+                        <notebook string="Services">
+                            <page string="Hotel Services">
+                                <group>
+                                    <group string="Room Service">
+                                        <field name="room_services"/>
+                                    </group>
+                                    <group string="Spa">
+                                        <field name="spa_spcial"/>
+                                        <field name="spa_normal"/>
+                                    </group>
+                                    <group string="transport services">
+                                        <field name="parking"/>
+                                        <field name="hotel_car"/>
+                                    </group>
+
+
+                                    <group string="Halls">
+                                        <field name="conference_hall"/>
+                                        <field name="wedding_hall" widget="radio"/>
+                                    </group>
+
+
+                                </group>
+
+
+                            </page>
+
+
+                        </notebook>
+
+
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+    </data>
+</openerp>

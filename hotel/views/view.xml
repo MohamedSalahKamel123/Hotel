@@ -1,0 +1,111 @@
+<openerp>
+    <data>
+
+
+        <record id="project_modeul_view_booking" model="ir.ui.view">
+            <field name="name">Booking Rooms</field>
+            <field name="model">hotel_booking_room</field>
+            <field name="arch" type="xml">
+                <form string="Booking">
+                    <!--<button name="getdate" type="object" string="ObjectButton"/>-->
+                    <header>
+                        <field name="workflow" widget="statusbar"/>
+                        <button name="confirm_booking" type="object" string="confirmation" class="oe_highlight"/>
+
+                        <button name="getdate_final" type="object" string="Chack date" class="oe_highlight"/>
+                        <button name="cancel_booking" type="object" string="cancel booking" class="oe_highlight"/>
+                    </header>
+
+                    <sheet>
+
+                        <field name="image" widget="image" class="oe_avatar"/>
+                        <div class="oe_title">
+                            <label for="name" class="oe_edit_only"/>
+                            <h1>
+                                <field name="employee_res" domain="[('user_id','=',uid)]"
+                                       placeholder="Employee's Name"/>
+                            </h1>
+                        </div>
+
+
+                        <div>
+                            <!--<field name="image" widget="image"/>-->
+                            <!--<field name="employee_res"/>-->
+
+                            <group>
+                                <group string="Reservation number">
+                                    <field name="filo"/>
+                                </group>
+                                <group string="Reservation Date">
+                                    <field name="book_date"/>
+                                </group>
+                            </group>
+
+                        </div>
+                        <div>
+                            <group>
+                                <group string="Room Type">
+                                    <field name="booking_type" style="width:400px"/>
+                                    <!--<field name="today"/>-->
+                                </group>
+
+                                <group string="Guest Information">
+
+                                    <field name="guest_name" domain="[('Make_reservation', '=',False ), ]"/>
+                                    <!--attrs="{-->
+                                    <!--'invisible': [('booking_type','not in',('s',))],-->
+                                    <!--'required': [('booking_type','in',('s'))],}"-->
+
+                                    <field name="age"/>
+                                    <field name="email" placeholder="gust's email" widget="email"/>
+                                    <!--<field name="nationalty"/>-->
+                                    <!--<field name="guest_iD" attrs="{-->
+                                    <!--'invisible': [('nationalty','not in',('e','f'))],}"/>-->
+                                    <!--<field name="no_group" attrs="{-->
+                                    <!--'invisible': [('booking_type','not in',('g'))],-->
+                                    <!--'required': [('booking_type','in',('g'))],}"/>-->
+                                    <!--&lt;!&ndash;<field name="serv"/>&ndash;&gt;-->
+                                </group>
+
+
+                                <group string="Date">
+                                    <!--<field name="date_of_birth"/>-->
+
+                                    <!--<field name="second_name" attrs="{-->
+                                    <!--'invisible': [('booking_type','not in',('s'))],-->
+                                    <!--'required': [('booking_type','in',('s'))],}"/>-->
+
+                                    <field name="arrival_date"/>
+                                    <field name="departure_date"/>
+                                </group>
+
+                                <group string="Check Rooms">
+                                    <field name="check_room" domain="[('state', '=',False ), ]"/>
+                                    <field name="night_no"/>
+                                </group>
+
+                                <group string="Room Price">
+                                    <field name="cost"/>
+                                    <field name="total_cost"/>
+                                    <field name="money_paid"/>
+                                    <field name="remaining_money"/>
+                                    <button name="countmoney" type="object" string="Remaining Money"
+                                            class="oe_highlight"/>
+
+                                </group>
+
+                                <group>
+
+                                </group>
+
+
+                            </group>
+                        </div>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+
+    </data>
+</openerp>

@@ -1,0 +1,212 @@
+<openerp>
+
+    <data>
+
+        <template id="report_hotel_company">
+            <t t-call="report.html_container">
+                <t t-call="report.external_layout">
+                    <div class="page">
+                        <br/>
+                        <br/>
+                        <div class="row">
+                            <h2>
+                                <span>
+                                    <center>Company Profile</center>
+                                </span>
+                            </h2>
+                        </div>
+                        <div class="row mt32 mb32">
+                            <div class="text-center">
+
+                            </div>
+                        </div>
+
+                        <table class="table table-condensed">
+                            <tr>
+
+                                <td>
+                                    <strong>Name</strong>
+                                </td>
+                                <td>
+                                    <strong>Address</strong>
+                                </td>
+                                <td>
+                                    <strong>E-mail</strong>
+                                </td>
+                                <td>
+                                    <strong>Phone</strong>
+                                </td>
+
+                            </tr>
+
+                            <t t-foreach="docs" t-as="o">
+                                <!--<t t-foreach="o.breakfas" t-as="x">-->
+
+                                <tr>
+                                    <td>
+                                        <span t-esc="o.name"/>
+                                    </td>
+                                    <td>
+                                        <span t-esc="o.address"/>
+                                    </td>
+                                    <td>
+                                        <span t-esc="o.email"/>
+                                    </td>
+                                    <td>
+                                        <span t-esc="o.phone"/>
+                                    </td>
+
+                                </tr>
+                                <!--</t>-->
+                            </t>
+                        </table>
+                        <!--==================================================================================================================-->
+
+                        <div class="row">
+                            <h2>
+                                <span>
+                                    <center>Guest Information</center>
+                                </span>
+                            </h2>
+                        </div>
+
+                        <table class="table table-condensed">
+                            <tr>
+                                <td>
+                                    <strong>Name</strong>
+                                </td>
+                                <td>
+                                    <strong>ID</strong>
+                                </td>
+
+                                <td>
+                                    <strong>Phone</strong>
+                                </td>
+
+                            </tr>
+                            <t t-foreach="docs" t-as="o">
+                                <t t-foreach="o.guestlist" t-as="x">
+
+
+                                    <tr>
+                                        <td>
+                                            <span t-esc="x.name"/>
+                                        </td>
+                                        <td>
+                                            <span t-esc="x.id_identification"/>
+                                        </td>
+                                        <td>
+                                            <span t-esc="x.phone"/>
+                                        </td>
+
+
+                                    </tr>
+                                </t>
+                            </t>
+
+                        </table>
+                        <!--=========================================================================================================================-->
+                        <div class="row">
+                            <h2>
+                                <span>
+                                    <center>Services</center>
+                                </span>
+                            </h2>
+                        </div>
+
+                        <table class="table table-condensed">
+                            <tr>
+                                <td>
+                                    <strong>Conference Hall</strong>
+                                </td>
+                                <td>
+                                    <strong>Wedding Hall</strong>
+                                </td>
+
+                                <td>
+                                    <strong>Parking</strong>
+                                </td>
+                                <td>
+                                    <strong>Hotel Car</strong>
+                                </td>
+
+                            </tr>
+                            <t t-foreach="docs" t-as="o">
+                                <!--<t t-foreach="o." t-as="x">-->
+
+
+                                    <tr>
+                                        <td>
+                                            <span t-esc="o.conference_hall"/>
+                                        </td>
+                                        <td>
+                                            <span t-esc="o.wedding_hall"/>
+                                        </td>
+                                        <td>
+                                            <span t-esc="o.parking"/>
+                                        </td>
+                                         <td>
+                                            <span t-esc="o.hotel_car"/>
+                                        </td>
+
+
+                                    </tr>
+                                <!--</t>-->
+                            </t>
+
+                        </table>
+<!--===================================================================================================================-->
+
+                         <div class="row">
+                            <h2>
+                                <span>
+                                    <center>Room Price</center>
+                                </span>
+                            </h2>
+                        </div>
+
+                        <table class="table table-condensed">
+                            <tr>
+                                <td>
+                                    <strong>Night Number</strong>
+                                </td>
+                                <td>
+                                    <strong>Room Price</strong>
+                                </td>
+
+                                <td>
+                                    <strong>Total Price</strong>
+                                </td>
+
+                            </tr>
+                            <t t-foreach="docs" t-as="o">
+                                <!--<t t-foreach="o.guestlist" t-as="x">-->
+
+
+                                    <tr>
+                                        <td>
+                                            <span t-esc="o.night_nom"/>
+                                        </td>
+                                        <td>
+                                            <span t-esc="o.pricsroom"/>  Pound
+                                        </td>
+                                        <td>
+                                            <span t-esc="o.totalprice"/> Pound
+                                        </td>
+
+
+                                    </tr>
+                                <!--</t>-->
+                            </t>
+
+                        </table>
+
+
+                        <!--==================================================================================================-->
+                    </div>
+                </t>
+            </t>
+        </template>
+    </data>
+
+</openerp>

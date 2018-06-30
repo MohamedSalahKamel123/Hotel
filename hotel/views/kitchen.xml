@@ -1,0 +1,114 @@
+<openerp>
+    <data>
+
+        <record id="kitchen_hotel_manag" model="ir.ui.view">
+            <field name="name">Kitchen</field>
+            <field name="model">kitchen.kitchen</field>
+            <field name="arch" type="xml">
+                <form string="Kitchen">
+                    <sheet>
+                        <field name="image" widget="image" class="oe_avatar"/>
+                        <div class="oe_title">
+                            <label for="name" class="oe_edit_only"/>
+                            <h1>
+                                <field name="employee_kitchn" domain="[('user_id','=',uid)]"
+                                       placeholder="Employee's Name"/>
+                            </h1>
+                        </div>
+
+                        <group>
+
+                            <group>
+
+                                <field name="today_date"/>
+
+                            </group>
+                            <group>
+
+                            </group>
+                        </group>
+                        <notebook>
+
+                            <page string="Brekfast">
+
+
+                                <field name="breakfas">
+
+                                    <tree editable="True">
+
+                                        <field name="food"/>
+                                        <field name="hot_drinks"/>
+                                        <field name="cold_drinks"/>
+
+                                    </tree>
+
+
+                                </field>
+
+                            </page>
+                            <page string="lunch">
+                                <field name="lunch">
+
+                                    <tree editable="True">
+
+                                        <field name="food"/>
+                                        <field name="hot_drinks"/>
+                                        <field name="cold_drinks"/>
+
+                                    </tree>
+
+
+                                </field>
+
+
+                            </page>
+                            <page string="Dinner">
+                                <field name="dinner">
+
+                                    <tree editable="True">
+
+                                        <field name="food"/>
+                                        <field name="hot_drinks"/>
+                                        <field name="cold_drinks"/>
+
+                                    </tree>
+
+
+                                </field>
+
+
+                            </page>
+
+
+                        </notebook>
+
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+
+        <!--=================================================================================================-->
+        <record id="kitchen_offers_drink" model="ir.actions.act_window">
+            <field name="name">Kitchen</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">kitchen.kitchen</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    <h1>the kitchen</h1>
+                    <p>Offers Food and Drinks</p>
+                </p>
+                <p>
+                    <!-- More details about what a user can do with this object will be OK -->
+                </p>
+            </field>
+        </record>
+        <!-- This Menu Item must have a parent and an action -->
+        <menuitem id="action_kitchen_menu" name="Kitchen" parent="hotel.hotel_management_services_hotel"
+                  action="kitchen_offers_drink" sequence="4"/>
+
+
+    </data>
+
+</openerp>

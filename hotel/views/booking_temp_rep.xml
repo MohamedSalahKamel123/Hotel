@@ -1,0 +1,90 @@
+<openerp>
+
+    <data>
+
+        <template id="report_hotel_folio">
+            <t t-call="report.html_container">
+                <t t-call="report.external_layout">
+                    <div class="page">
+                        <br/>
+                        <br/>
+                        <div class="row">
+                            <h2>
+                                <span>
+                                    <center>Hotel Reservation</center>
+                                </span>
+                            </h2>
+                        </div>
+
+                        <div class="row mt32 mb32">
+                            <div class="text-center">
+
+                            </div>
+                        </div>
+
+
+                        <!--&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+
+                        <table class="table table-condensed">
+                            <tr>
+                                <td>
+                                    <strong>Folio No.</strong>
+                                </td>
+                                <td>
+                                    <strong>Booking Date</strong>
+                                </td>
+
+                                <td>
+                                    <strong>guest_name</strong>
+                                </td>
+                                <td>
+                                    <strong>arrival_date</strong>
+                                </td>
+                                <td>
+                                    <strong>departure_date</strong>
+                                </td>
+                                <td>
+                                    <strong>Remaining Money</strong>
+                                </td>
+
+
+                            </tr>
+                            <t t-foreach="docs" t-as="o">
+
+                                <tr>
+                                    <td>
+                                        <span t-esc="o.id"/>
+                                    </td>
+                                    <td>
+                                        <span t-esc="o.book_date"/>
+                                    </td>
+                                    <td>
+                                        <span t-esc="o.guest_name.name"/>
+                                    </td>
+                                    <td>
+                                        <span t-esc="o.arrival_date"/>
+                                    </td>
+                                    <td>
+                                        <span t-esc="o.departure_date"/>
+                                    </td>
+                                    <t t-foreach="o" t-as="x">
+
+                                        <td>
+                                            <span t-esc="x.remaining_money"/>
+                                        </td>
+                                    </t>
+                                </tr>
+
+                            </t>
+
+                        </table>
+
+
+                        <!-- -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+                    </div>
+                </t>
+            </t>
+        </template>
+    </data>
+
+</openerp>

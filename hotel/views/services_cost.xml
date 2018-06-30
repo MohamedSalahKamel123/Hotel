@@ -1,0 +1,95 @@
+<openerp>
+    <data>
+
+        <record id="form_services_cost" model="ir.ui.view">
+            <field name="name">Services Cost</field>
+            <field name="model">services_cost_hotel</field>
+            <field name="arch" type="xml">
+                <form string="Services List" >
+                    <header>
+                        <button name="edit_list" string="Edit" class="oe_highlight" type="object"/>
+
+                        <button name="confirm_list" string="Confirm" class="oe_highlight" type="object" requird="True"/>
+                        <field name="state" widget="statusbar" attrs="{
+                                        'required': [('state','=','e')],}"/>
+                    </header>
+                    <sheet>
+
+                        <notebook>
+                            <page string="services Price">
+                                <group>
+                                    <group string="Room Service">
+                                        <field name="roomservices_price"
+                                               attrs="{
+                                        'readonly': [('state','=','c')],}"
+                                        />
+                                    </group>
+                                    <group string="Spa">
+                                        <field name="spa_spcial"
+                                               attrs="{
+                                        'readonly': [('state','=','c')],}"
+                                        />
+                                        <field name="spa_normal"
+                                               attrs="{
+                                        'readonly': [('state','=','c')],}"
+                                        />
+                                    </group>
+                                    <group string="transport services">
+                                        <field name="parking_price" attrs="{
+                                        'readonly': [('state','=','c')],}"/>
+                                        <field name="hotel_carprice" attrs="{
+                                        'readonly': [('state','=','c')],}"/>
+                                    </group>
+
+
+                                    <group string="Halls">
+                                        <field name="conferencehall_sprice" attrs="{
+                                        'readonly': [('state','=','c')],}"/>
+                                        <field name="conferencehall_bprice" attrs="{
+                                        'readonly': [('state','=','c')],}"/>
+                                        <field name="weddinghall_sprice" attrs="{
+                                        'readonly': [('state','=','c')],}"/>
+                                        <field name="weddinghall_bprice" attrs="{
+                                        'readonly': [('state','=','c')],}"/>
+
+                                    </group>
+
+                                </group>
+                                <!--<field name="test" widget="many2many_kanban"/>-->
+                                <!--<button name="fun" type="object"  class="oe_inline">-->
+                                <!--<field name='test' widget="percentpie"/>-->
+
+                                <!--</button>-->
+
+
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+
+        <!--This Menu Item must have a parent and an action-->
+        <record id="cost_services_hotel" model="ir.actions.act_window">
+            <field name="name">Services</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">services_cost_hotel</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create" >
+                    <h1>The Cost</h1>
+                </p>
+                <p>
+                    Costing services within the hotel
+
+
+                </p>
+            </field>
+        </record>
+        <menuitem id="cost_services" name="Services Cost" parent="hotel.hotel_management_services_hotel"
+                  action="cost_services_hotel" sequence="3"/>
+
+    </data>
+
+</openerp>

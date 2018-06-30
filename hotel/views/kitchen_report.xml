@@ -1,0 +1,14 @@
+<openerp>
+    <data>
+
+        <report id="kitchen_report_hotel_management" string="Kitchen Report" model="kitchen.kitchen" report_type="qweb-pdf"
+                file="hotel.kitchen_report_hotel" name="hotel.kitchen_report_hotel" menu="True"
+        />
+
+
+
+
+    </data>
+
+
+</openerp>

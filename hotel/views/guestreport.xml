@@ -1,0 +1,48 @@
+<openerp>
+    <data>
+
+
+        <record id="hotel_wizers_gust" model="ir.ui.view">
+            <field name="name">Guest Booking</field>
+            <field name="model">wizer.gust</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+
+                        <group string="Select Bookining gest">
+                            <field name="start_date"/>
+                            <field name="end_date"/>
+                        </group>
+                    </sheet>
+                    <footer>
+                        <group>
+                            <button type="object" name="print_report" string="Print" class="oe_highlight"
+                                    icon="fa-download"/>
+                            <button name="cancel" type="object" string="Cancel" special="cancel" class="oe_highlight"
+                                    icon="fa-times"/>
+
+                        </group>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+<!--==========================================================================================================-->
+         <record id="hot_geust_reports_hotel" model="ir.actions.act_window">
+            <field name="name">Wizerer</field>
+            <field name="res_model">wizer.gust</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="view_mode">form</field>
+            <field name="view_type">form</field>
+            <!--<field name="view_id" ref="hotel_wizers_form"/>-->
+            <field name="target">new</field>
+        </record>
+
+        <menuitem id="report_categ" name="Reports" parent="hotel.root_menu_booking" sequence="3"/>
+        <!-- This Menu Item Must have a parent -->
+        <menuitem id="report_ID_categ" name="Reports" parent="report_categ" sequence="1"/>
+        <menuitem id="Wizerview_guest_hotels" name="Reservation Geust"  action="hot_geust_reports_hotel"
+                 parent="report_ID_categ" sequence="100"/>
+
+    </data>
+</openerp>

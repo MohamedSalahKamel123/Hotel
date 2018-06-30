@@ -1,0 +1,104 @@
+<openerp>
+
+    <data>
+
+        <template id="report_hotel_groupbooking">
+            <t t-call="report.html_container">
+                <t t-call="report.external_layout">
+                    <div class="page">
+                        <br/>
+                        <br/>
+                        <div class="row">
+                            <h2>
+                                <span>
+                                    <center>Group Booking</center>
+                                </span>
+                            </h2>
+                        </div>
+
+                        <div class="row mt32 mb32">
+                            <div class="text-center">
+
+                            </div>
+                        </div>
+
+
+                        <!--&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+
+                        <table class="table table-condensed">
+                            <tr>
+                                <td>
+                                    <strong>Employee Name</strong>
+                                </td>
+                                <td>
+                                    <strong>ID</strong>
+                                </td>
+
+                                <td>
+                                    <strong>Arrived Date</strong>
+                                </td>
+
+                                <td>
+                                    <strong>Departure Date</strong>
+                                </td>
+                                <td>
+                                    <strong>Room Number</strong>
+                                </td>
+                                <td>
+                                    <strong>Company Name</strong>
+                                </td>
+                                <td>
+                                    <strong>Total Price</strong>
+                                </td>
+
+
+                            </tr>
+                            <t t-foreach="docs" t-as="o">
+
+                                <tr>
+                                    <td>
+                                        <span t-esc="o.emp_name.name"/>
+                                    </td>
+                                    <td>
+                                        <span t-esc="o.filo"/>
+                                    </td>
+
+                                    <td>
+                                        <span t-esc="o.arrive_date"/>
+                                    </td>
+                                    <td>
+                                        <span t-esc="o.departure_date"/>
+                                    </td>
+                                    <!--<t t-foreach="o.selectrooms" t-as="x">-->
+
+                                    <t t-foreach="o.selectrooms" t-as="x">
+
+                                        <td>
+                                            <span t-esc="x.room_no" t-options="{'widget': 'many2many_tags'}"/>
+                                            <br></br>
+                                        </td>
+
+                                    </t>
+
+                                    <td>
+                                        <span t-esc="o.company_name.name"/>
+                                    </td>
+                                    <td>
+                                        <span t-esc="o.total_price"/>
+                                    </td>
+
+                                </tr>
+
+                            </t>
+
+                        </table>
+
+
+                        <!-- -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+                    </div>
+                </t>
+            </t>
+        </template>
+    </data>
+
+</openerp>

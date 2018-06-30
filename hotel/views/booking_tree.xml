@@ -1,0 +1,36 @@
+<openerp>
+
+    <data>
+
+       <record id="booking Tree" model="ir.ui.view">
+           <field name="name">Booking Rooms</field>
+           <field name="model">hotel_booking_room</field>
+           <field name="arch" type="xml">
+               <tree string="">
+                   <field name="booking_type"/>
+                   <field name="arrival_date"/>
+                   <field name="departure_date"/>
+                   <!--<field name="nationalty"/>-->
+               </tree>
+           </field>
+       </record>
+
+
+
+        <record id="Room_Tree" model="ir.ui.view">
+            <field name="name">Rooms Hotel</field>
+            <field name="model">room_hotelmanagement</field>
+            <field name="arch" type="xml">
+                <tree string="">
+                    <field name="room_no"/>
+                    <field name="room_type"/>
+                    <field name="room_view"/>
+                    <field name="price"/>
+                    <field name="state"/>
+                </tree>
+            </field>
+        </record>
+
+    </data>
+
+</openerp>

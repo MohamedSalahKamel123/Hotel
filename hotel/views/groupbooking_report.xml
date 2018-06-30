@@ -1,0 +1,14 @@
+<openerp>
+    <data>
+
+        <report id="report_hotel_groupbooking_report" string="Group Booking" model="group_booking_rooms" report_type="qweb-pdf"
+                file="hotel.report_hotel_groupbooking" name="hotel.report_hotel_groupbooking" menu="True"
+        />
+
+
+
+
+    </data>
+
+
+</openerp>

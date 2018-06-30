@@ -1,0 +1,178 @@
+<openerp>
+
+    <data>
+
+        <!--<delete model="hr.employee.category"/>-->
+
+        <record id="customer_hotel_profile" model="ir.ui.view">
+            <field name="name">Customer</field>
+            <field name="model">customers_profile</field>
+            <field name="arch" type="xml">
+                <form string="Customer">
+                    <sheet>
+
+
+                        <field name="image" widget="image" class="oe_avatar"/>
+                        <div class="oe_title">
+                            <label for="name" class="oe_edit_only"/>
+                            <h1>
+                                <field name="name" placeholder="Customer's Name"/>
+                            </h1>
+                        </div>
+                        <!--<button type="object" name="print_report"/>-->
+
+                        <!--#8181F7; width:350px;"-->
+                        <notebook>
+                            <page string="Public Informaton">
+
+
+                                <group string="Contact Information">
+                                    <group>
+                                        <!--<field name="first_name"/>-->
+                                        <field name="address" context="{'show_address': 1}"
+                                               options="{&quot;always_reload&quot;: True, &quot;highlight_first_line&quot;: True}"/>
+
+                                        <field name="birth_of_date"/>
+                                        <field name="phone"/>
+                                        <field name="age"/>
+
+                                    </group>
+                                    <group>
+                                        <!--<field name="last_name"/>-->
+                                        <field name="state"/>
+                                        <field name="identification_id"
+
+                                               attrs="{
+                                        'invisible': [('state','=','f')],
+                                        'required': [('state','=','e')],}"
+
+                                        />
+                                        <field name="passport_id"
+                                               attrs="{
+                                         'invisible': [('state','=','e')],
+                                        'required': [('state','=','f')],}"
+
+                                        />
+                                        <field name="gender"/>
+                                        <field name="marital"/>
+                                    </group>
+                                    <!--<button name="rooms_numbers" type="object" string="rooms_numbers"/>-->
+                                    <field name="notes" placeholder="Other Information ..." colspan="4"
+                                           style="height: 50px;"/>
+                                </group>
+
+                            </page>
+
+                            <page string="Room Informaton">
+                                <group>
+                                    <group string="Room">
+                                        <field name="room_no"/>
+                                        <field name="days_no"/>
+                                        <field name="Make_reservation"/>
+                                    </group>
+                                    <group string="Total cost">
+                                        <field name="night_price"/>
+                                        <field name="total_price"/>
+                                        <field name="paid_money"/>
+                                        <field name="remaining_money"/>
+
+                                    </group>
+
+                                </group>
+                            </page>
+                            <page string="Services Cost">
+
+
+                                <field name="serv_total">
+                                    <tree editable="True">
+                                        <field name="conference_hall"/>
+                                        <field name="wedding_hall"/>
+                                        <field name="parking"/>
+                                        <field name="hotel_car"/>
+                                        <field name="spa"/>
+                                        <field name="subtotal"/>
+
+                                    </tree>
+                                </field>
+                                <group>
+                                    <group>
+
+                                    </group>
+                                    <group>
+                                        <field name="Total"/>
+                                    </group>
+                                </group>
+                            </page>
+
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <!--==================================================================================================================-->
+
+        <record id="customers_tree_views" model="ir.ui.view">
+            <field name="name">Customer</field>
+            <field name="model">customers_profile</field>
+            <field name="arch" type="xml">
+                <tree string="Customer">
+                    <field name="name"/>
+                    <field name="address"/>
+                    <field name="birth_of_date"/>
+                    <field name="phone"/>
+                    <field name="age"/>
+                    <field name="state"/>
+                    <field name="identification_id"/>
+                </tree>
+            </field>
+        </record>
+
+        <!--=======================================================================================================-->
+        <record model="ir.ui.view" id="custom_module_kanban_view">
+            <field name="name">custom.module.kanban</field>
+            <field name="model">customers_profile</field>
+            <field name="type">kanban</field>
+            <field name="arch" type="xml">
+                <kanban>
+                    <!--list of field to be loaded -->
+                    <field name="name"/>
+                    <field name="image"/>
+                    <templates>
+                        <t t-name="kanban-box">
+                            <div class="oe_product_vignette">
+                                <a type="open">
+                                    <img class="oe_kanban_image"
+                                         t-att-src="kanban_image('customers_profile', 'image', record.id.value)"
+                                         width="300" height="128"/>
+                                </a>
+                                <h4>
+                                </h4>
+                                <div class="oe_product_desc">
+                                    <h4>
+                                        <a type="edit">
+                                            <field name="name"></field>
+                                            <br></br>
+                                            <field name="state"></field>
+                                            <br></br>
+                                            <field name="marital"></field>
+                                            <br></br>
+                                            <field name="phone"></field>
+
+                                        </a>
+                                    </h4>
+
+                                    <!--<ul>-->
+                                    <!--<li>name</li>-->
+                                    <!--<li>image</li>-->
+                                    <!--</ul>-->
+                                </div>
+                            </div>
+                        </t>
+                    </templates>
+                </kanban>
+            </field>
+        </record>
+
+    </data>
+
+</openerp>

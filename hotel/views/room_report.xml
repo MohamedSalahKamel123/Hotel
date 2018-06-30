@@ -1,0 +1,14 @@
+<openerp>
+    <data>
+
+        <report id="Room_report_hotel_management" string="Room Folio" model="room_hotelmanagement" report_type="qweb-pdf"
+                file="hotel.room_report_hotel_folio" name="hotel.room_report_hotel_folio" menu="True"
+        />
+
+
+
+
+    </data>
+
+
+</openerp>

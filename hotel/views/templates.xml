@@ -1,0 +1,50 @@
+<odoo>
+    <data>
+
+<!--placeholder="Room's Name"-->
+        <!--===========================================================================================-->
+        <record id="id_form_rooms" model="ir.ui.view">
+            <field name="name">Rooms Management</field>
+            <field name="model">room_hotelmanagement</field>
+            <field name="arch" type="xml">
+                <form string="Rooms Management">
+
+                    <sheet>
+
+                        <field name="image" widget="image" class="oe_avatar"/>
+                        <div class="oe_title">
+                            <label for="name" class="oe_edit_only"/>
+                            <h1>
+                                <field name="name"/>
+                            </h1>
+                        </div>
+
+                        <group>
+                            <group string='Informations'>
+                                <field name="room_no"/>
+                                <field name="room_type"/>
+                            </group>
+                            <group string="Room View">
+                                <field name="floor"/>
+                                <field name="room_view"/>
+
+                            </group>
+                            <group string="State">
+                                <field name="state"/>
+                            </group>
+                            <group string="Price">
+                                <field name="price"/>
+
+                            </group>
+
+                        </group>
+                        <div class="oe_title">
+                            <field name="notes" placeholder="Other Information ..." colspan="4"
+                                   style="height: 50px;"/>
+                        </div>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>

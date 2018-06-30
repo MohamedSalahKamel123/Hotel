@@ -1,0 +1,33 @@
+<openerp>
+    <data>
+
+
+        <record id="emp_category" model="ir.module.category">
+            <field name="name">Employee Hotel</field>
+            <field name="sequence" eval="1"/>
+        </record>
+        <record id="emp_permisions_group" model="res.groups">
+            <field name="name">Employee Permisions</field>
+            <field name="category_id" ref="emp_category"/>
+            <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
+        </record>
+
+        <record id="manager_permisions_group" model="res.groups">
+            <field name="name">Manager Hotel</field>
+            <field name="category_id" ref="emp_category"/>
+            <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
+        </record>
+        <record id="emp_permisions_kitchen" model="res.groups">
+            <field name="name">Kitchen Employee</field>
+            <field name="category_id" ref="emp_category"/>
+            <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
+        </record>
+        <record id="customer_showprofile" model="res.groups">
+            <field name="name">Guest Profile</field>
+            <field name="category_id" ref="emp_category"/>
+            <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
+        </record>
+
+
+    </data>
+</openerp>

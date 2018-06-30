@@ -1,0 +1,1751 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* hotel
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-22 02:17+0000\n"
+"PO-Revision-Date: 2018-06-22 04:35+0200\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: ar\n"
+"X-Generator: Poedit 1.8.7.1\n"
+
+#. module: hotel
+#: model:ir.ui.menu,name:hotel.hotel_management_Customer_prof1
+msgid " Customers of Hotel"
+msgstr "الزئرين للفندق"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_company_profile_night_nom
+#: model:ir.model.fields,field_description:hotel.field_group_booking_rooms_night_no
+msgid " Duration"
+msgstr "المدة/الفترة الزمنية "
+
+#. module: hotel
+#: model:ir.ui.menu,name:hotel.actions_menus_booking
+msgid " Guest Booking"
+msgstr "حجز للزائر"
+
+#. module: hotel
+#: selection:company.profile,conference_hall:0
+#: selection:company.profile,wedding_hall:0
+#: selection:hotel_services,conference_hall:0
+#: selection:hotel_services,wedding_hall:0
+msgid "1000 people"
+msgstr "1000شخص "
+
+#. module: hotel
+#: selection:company.profile,conference_hall:0
+#: selection:company.profile,wedding_hall:0
+#: selection:hotel_services,conference_hall:0
+#: selection:hotel_services,wedding_hall:0
+msgid "500 people"
+msgstr "500 شخص"
+
+#. module: hotel
+#: model:ir.ui.view,arch_db:hotel.report_hotel_guest
+msgid "<strong>Age</strong>"
+msgstr "<strong>العمر/السن</strong>"
+
+#. module: hotel
+#: model:ir.ui.view,arch_db:hotel.report_hotel_groupbooking
+msgid "<strong>Arrived Date</strong>"
+msgstr "<strong>تاريخ الوصول</strong>"
+
+#. module: hotel
+#: model:ir.ui.view,arch_db:hotel.report_hotel_folio
+msgid "<strong>Booking Date</strong>"
+msgstr "<strong>تاريخ الحجز</strong>"
+
+#. module: hotel
+#: model:ir.ui.view,arch_db:hotel.kitchen_report_hotel
+msgid "<strong>Cold Drinks</strong>"
+msgstr "<strong>مشروبات بارده</strong>"
+
+#. module: hotel
+#: model:ir.ui.view,arch_db:hotel.report_hotel_groupbooking
+msgid "<strong>Company Name</strong>"
+msgstr "<strong>اسم الشركة</strong>"
+
+#. module: hotel
+#: model:ir.ui.view,arch_db:hotel.report_hotel_guest
+msgid "<strong>Conference Hall</strong>"
+msgstr "<strong>قاعه مؤتمرات</strong>"
+
+#. module: hotel
+#: model:ir.ui.view,arch_db:hotel.report_hotel_groupbooking
+msgid "<strong>Departure Date</strong>"
+msgstr "<strong>تاريخ الرحيل</strong>"
+
+#. module: hotel
+#: model:ir.ui.view,arch_db:hotel.report_hotel_groupbooking
+msgid "<strong>Employee Name</strong>"
+msgstr "<strong>اسم الموظف</strong>"
+
+#. module: hotel
+#: model:ir.ui.view,arch_db:hotel.room_report_hotel_folio
+msgid "<strong>Floor</strong>"
+msgstr "<strong>الطابق</strong>"
+
+#. module: hotel
+#: model:ir.ui.view,arch_db:hotel.report_hotel_folio
+msgid "<strong>Folio No.</strong>"
+msgstr "<strong>رقم الحجز</strong>"
+
+#. module: hotel
+#: model:ir.ui.view,arch_db:hotel.kitchen_report_hotel
+msgid "<strong>Food</strong>"
+msgstr "<strong>الطعام</strong>"
+
+#. module: hotel
+#: model:ir.ui.view,arch_db:hotel.report_hotel_guest
+msgid "<strong>Guest Name</strong>"
+msgstr "<strong>اسم الضيف</strong>"
+
+#. module: hotel
+#: model:ir.ui.view,arch_db:hotel.kitchen_report_hotel
+msgid "<strong>Hot Drinks</strong>"
+msgstr "<strong>مشروبات ساخنه</strong>"
+
+#. module: hotel
+#: model:ir.ui.view,arch_db:hotel.report_hotel_groupbooking
+#: model:ir.ui.view,arch_db:hotel.report_hotel_guest
+msgid "<strong>ID</strong>"
+msgstr "<strong>هويه الشخص</strong>"
+
+#. module: hotel
+#: model:ir.ui.view,arch_db:hotel.room_report_hotel_folio
+msgid "<strong>Id</strong>"
+msgstr "<strong>هويه الشخص</strong>"
+
+#. module: hotel
+#: model:ir.ui.view,arch_db:hotel.room_report_hotel_folio
+msgid "<strong>Name</strong>"
+msgstr "<strong>اسم</strong>"
+
+#. module: hotel
+#: model:ir.ui.view,arch_db:hotel.report_hotel_guest
+#: model:ir.ui.view,arch_db:hotel.room_report_hotel_folio
+msgid "<strong>Net Total:</strong>"
+msgstr "<strong>صافي المجموع:</strong>"
+
+#. module: hotel
+#: model:ir.ui.view,arch_db:hotel.report_hotel_guest
+msgid "<strong>Paid Money</strong>"
+msgstr "<strong>المبلغ المدفوع</strong>"
+
+#. module: hotel
+#: model:ir.ui.view,arch_db:hotel.report_hotel_guest
+msgid "<strong>Parking</strong>"
+msgstr "<strong>الجراج</strong>"
+
+#. module: hotel
+#: model:ir.ui.view,arch_db:hotel.room_report_hotel_folio
+msgid "<strong>Price</strong>"
+msgstr "<strong>السعر</strong>"
+
+#. module: hotel
+#: model:ir.ui.view,arch_db:hotel.report_hotel_folio
+#: model:ir.ui.view,arch_db:hotel.report_hotel_guest
+msgid "<strong>Remaining Money</strong>"
+msgstr "<strong>المال المتبقي</strong>"
+
+#. module: hotel
+#: model:ir.ui.view,arch_db:hotel.report_hotel_guest
+msgid "<strong>Room No</strong>"
+msgstr "<strong>رقم الغرفه</strong>"
+
+#. module: hotel
+#: model:ir.ui.view,arch_db:hotel.report_hotel_groupbooking
+#: model:ir.ui.view,arch_db:hotel.room_report_hotel_folio
+msgid "<strong>Room Number</strong>"
+msgstr "<strong>رقم الغرفه</strong>"
+
+#. module: hotel
+#: model:ir.ui.view,arch_db:hotel.room_report_hotel_folio
+msgid "<strong>State</strong>"
+msgstr "<strong>الحاله</strong>"
+
+#. module: hotel
+#: model:ir.ui.view,arch_db:hotel.report_hotel_guest
+msgid "<strong>Subtotal</strong>"
+msgstr "<strong>السعر الكلي</strong>"
+
+#. module: hotel
+#: model:ir.ui.view,arch_db:hotel.report_hotel_guest
+msgid "<strong>Total Price :- </strong>"
+msgstr "<strong>السعر الكلي :-</strong>"
+
+#. module: hotel
+#: model:ir.ui.view,arch_db:hotel.report_hotel_groupbooking
+#: model:ir.ui.view,arch_db:hotel.report_hotel_guest
+msgid "<strong>Total Price</strong>"
+msgstr "<strong>السعر الاجمالي</strong>"
+
+#. module: hotel
+#: model:ir.ui.view,arch_db:hotel.report_hotel_guest
+msgid "<strong>Use the hotel car</strong>"
+msgstr "<strong>استخدام سياره الفندق</strong>"
+
+#. module: hotel
+#: model:ir.ui.view,arch_db:hotel.report_hotel_guest
+msgid "<strong>Wedding Hall</strong>"
+msgstr "<strong>قاعه افراح</strong>"
+
+#. module: hotel
+#: model:ir.ui.view,arch_db:hotel.report_hotel_folio
+msgid "<strong>arrival_date</strong>"
+msgstr "<strong>تاريخ الوصول</strong>"
+
+#. module: hotel
+#: model:ir.ui.view,arch_db:hotel.report_hotel_folio
+msgid "<strong>departure_date</strong>"
+msgstr "<strong>تاريخ الرحيل</strong>"
+
+#. module: hotel
+#: model:ir.ui.view,arch_db:hotel.report_hotel_folio
+msgid "<strong>guest_name</strong>"
+msgstr "<strong>اسم الزائر</strong>"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_employee_hotel_active
+msgid "Active"
+msgstr "نشط"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_customers_profile_address
+msgid "Address"
+msgstr "العنوان"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_customers_profile_age
+#: model:ir.model.fields,field_description:hotel.field_hotel_booking_room_age
+msgid "Age"
+msgstr "السن"
+
+#. module: hotel
+#: selection:breakfast.clas,hot_drinks:0 selection:dinner.clas,hot_drinks:0
+#: selection:lunch.clas,hot_drinks:0
+msgid "Anise"
+msgstr "يانسون"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_hotel_booking_room_arrival_date
+msgid "Arrival Date"
+msgstr "تاريخ الوصول"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_group_booking_rooms_arrive_date
+msgid "Arrived Date"
+msgstr "تاريخ الوصول"
+
+#. module: hotel
+#: selection:breakfast.clas,food:0
+msgid "Bean"
+msgstr "فول"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_customers_profile_birth_of_date
+msgid "Birth Of Date"
+msgstr "تاريخ الميلاد"
+
+#. module: hotel
+#: model:ir.ui.view,arch_db:hotel.project_modeul_view_booking
+msgid "Booking"
+msgstr "الحجز"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_group_booking_rooms_book_date
+#: model:ir.model.fields,field_description:hotel.field_hotel_booking_room_book_date
+#: model:ir.model.fields,field_description:hotel.field_hotel_booking_room_new_field
+#: model:ir.ui.view,arch_db:hotel.group_booking_rooms
+msgid "Booking Date"
+msgstr "تاريخ الحجز"
+
+#. module: hotel
+#: model:ir.actions.act_window,help:hotel.BookingRooms
+#: model:ir.actions.act_window,name:hotel.BookingRooms
+msgid "Booking Rooms"
+msgstr "حجز الغرف "
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_group_booking_rooms_booking_type
+#: model:ir.model.fields,field_description:hotel.field_hotel_booking_room_booking_type
+msgid "Booking Type"
+msgstr "نوع الحجز"
+
+#. module: hotel
+#: selection:breakfast.clas,food:0
+msgid "Bread"
+msgstr "خبز"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_kitchen_kitchen_breakfas
+msgid "Breakfas"
+msgstr "وجبه الفطار"
+
+#. module: hotel
+#: model:ir.ui.view,arch_db:hotel.kitchen_hotel_manag
+msgid "Brekfast"
+msgstr "وجبه الفطار"
+
+#. module: hotel
+#: selection:breakfast.clas,hot_drinks:0 selection:dinner.clas,hot_drinks:0
+#: selection:lunch.clas,hot_drinks:0
+msgid "Cacao"
+msgstr "كوكا كولا"
+
+#. module: hotel
+#: selection:breakfast.clas,food:0
+msgid "Cake"
+msgstr "كيكه"
+
+#. module: hotel
+#: model:ir.ui.view,arch_db:hotel.hotel_wizers_form_groupbooking
+#: model:ir.ui.view,arch_db:hotel.hotel_wizers_gust
+msgid "Cancel"
+msgstr "إلغاء"
+
+#. module: hotel
+#: sql_constraint:customers_profile:0
+msgid "Cant be duplicate Identification Id"
+msgstr "لا يمكن تكرار هويه الشخص"
+
+#. module: hotel
+#: sql_constraint:customers_profile:0
+msgid "Cant be duplicate Neme number"
+msgstr "لا يمكن تكرار رقم التليفون"
+
+#. module: hotel
+#: sql_constraint:customers_profile:0
+msgid "Cant be duplicate Passport No"
+msgstr "لا يمكن تكرار رقم جواز السفر"
+
+#. module: hotel
+#: sql_constraint:room_hotelmanagement:0
+msgid "Cant be duplicate Room number"
+msgstr "لا يمكن تكرار رقم الغرفه"
+
+#. module: hotel
+#: sql_constraint:company.profile:0 sql_constraint:customers_profile:0
+msgid "Cant be duplicate phone number"
+msgstr "لا يمكن تكرار رقم التليفون"
+
+#. module: hotel
+#: model:ir.ui.view,arch_db:hotel.group_booking_rooms
+#: model:ir.ui.view,arch_db:hotel.project_modeul_view_booking
+msgid "Chack date"
+msgstr "افحص التاريخ"
+
+#. module: hotel
+#: selection:group_booking_rooms,workflow:0
+msgid "Check Date"
+msgstr "افحص التاريخ"
+
+#. module: hotel
+#: model:ir.ui.view,arch_db:hotel.project_modeul_view_booking
+msgid "Check Rooms"
+msgstr "افحص الغرف"
+
+#. module: hotel
+#: selection:breakfast.clas,food:0
+msgid "Cheese"
+msgstr "جبنه"
+
+#. module: hotel
+#: selection:breakfast.clas,cold_drinks:0 selection:dinner.clas,cold_drinks:0
+#: selection:lunch.clas,cold_drinks:0
+msgid "Coca Cola"
+msgstr "كوكا كولا"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_employee_hotel_code
+msgid "Code"
+msgstr "الكود"
+
+#. module: hotel
+#: selection:breakfast.clas,hot_drinks:0 selection:dinner.clas,hot_drinks:0
+#: selection:lunch.clas,hot_drinks:0
+msgid "Coffee"
+msgstr "قهوه"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_breakfast_clas_cold_drinks
+#: model:ir.model.fields,field_description:hotel.field_dinner_clas_cold_drinks
+#: model:ir.model.fields,field_description:hotel.field_lunch_clas_cold_drinks
+msgid "Cold Drinks"
+msgstr "مشروبات بارده"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_group_booking_rooms_company_name
+msgid "Compane Name"
+msgstr "اسم الشركه"
+
+#. module: hotel
+#: model:ir.ui.view,arch_db:hotel.company_form_name
+msgid "Compane Page"
+msgstr "صفحه الشركه"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_employee_hotel_company_id
+msgid "Company"
+msgstr "المؤسسة"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_company_profile_address
+msgid "Company Address"
+msgstr "عنوان الشركه"
+
+#. module: hotel
+#: model:ir.ui.view,arch_db:hotel.company_form_name
+msgid "Company Information"
+msgstr "معلومات عن الشركه"
+
+#. module: hotel
+#: model:ir.ui.view,arch_db:hotel.group_booking_rooms
+msgid "Company Informations"
+msgstr "معلومات عن الشركه"
+
+#. module: hotel
+#: model:ir.actions.act_window,name:hotel.company_profile_action
+#: model:ir.ui.menu,name:hotel.company_profile_hotel
+#: model:ir.ui.view,arch_db:hotel.tree_company_form_profiles
+msgid "Company Profile"
+msgstr "صفحه الشركه"
+
+#. module: hotel
+#: model:ir.ui.view,arch_db:hotel.company_form_name
+msgid "Company's Name"
+msgstr "اسم الشركه"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_company_profile_conference_hall
+#: model:ir.model.fields,field_description:hotel.field_hotel_services_conference_hall
+#: model:ir.model.fields,field_description:hotel.field_services_cost_hotel_conference_hall
+msgid "Conference Hall"
+msgstr "قاعه المؤتمرات"
+
+#. module: hotel
+#: selection:services_cost_hotel,state:0
+msgid "Confirm List"
+msgstr "تأكيد القائمه"
+
+#. module: hotel
+#: model:ir.ui.view,arch_db:hotel.customer_hotel_profile
+msgid "Contact Information"
+msgstr "معلومات التواصل"
+
+#. module: hotel
+#: model:ir.actions.act_window,help:hotel.hotel_management_Guest_Customer_Profile
+msgid "Create Guest Profiel"
+msgstr "انشاء صفحه للزائر"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_add_guests_create_uid
+#: model:ir.model.fields,field_description:hotel.field_booking_booking_group_create_uid
+#: model:ir.model.fields,field_description:hotel.field_breakfast_clas_create_uid
+#: model:ir.model.fields,field_description:hotel.field_company_profile_create_uid
+#: model:ir.model.fields,field_description:hotel.field_customers_profile_create_uid
+#: model:ir.model.fields,field_description:hotel.field_dinner_clas_create_uid
+#: model:ir.model.fields,field_description:hotel.field_employee_hotel_create_uid
+#: model:ir.model.fields,field_description:hotel.field_group_booking_rooms_create_uid
+#: model:ir.model.fields,field_description:hotel.field_guests_informations_create_uid
+#: model:ir.model.fields,field_description:hotel.field_hotel_booking_room_create_uid
+#: model:ir.model.fields,field_description:hotel.field_hotel_resturant_serv_create_uid
+#: model:ir.model.fields,field_description:hotel.field_hotel_services_create_uid
+#: model:ir.model.fields,field_description:hotel.field_kitchen_kitchen_create_uid
+#: model:ir.model.fields,field_description:hotel.field_lunch_clas_create_uid
+#: model:ir.model.fields,field_description:hotel.field_room_hotelmanagement_create_uid
+#: model:ir.model.fields,field_description:hotel.field_services_cost_hotel_create_uid
+#: model:ir.model.fields,field_description:hotel.field_wizer_groupbooking_create_uid
+#: model:ir.model.fields,field_description:hotel.field_wizer_gust_create_uid
+#: model:ir.model.fields,field_description:hotel.field_wizerard_serv_create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_add_guests_create_date
+#: model:ir.model.fields,field_description:hotel.field_booking_booking_group_create_date
+#: model:ir.model.fields,field_description:hotel.field_breakfast_clas_create_date
+#: model:ir.model.fields,field_description:hotel.field_company_profile_create_date
+#: model:ir.model.fields,field_description:hotel.field_customers_profile_create_date
+#: model:ir.model.fields,field_description:hotel.field_dinner_clas_create_date
+#: model:ir.model.fields,field_description:hotel.field_employee_hotel_create_date
+#: model:ir.model.fields,field_description:hotel.field_group_booking_rooms_create_date
+#: model:ir.model.fields,field_description:hotel.field_guests_informations_create_date
+#: model:ir.model.fields,field_description:hotel.field_hotel_booking_room_create_date
+#: model:ir.model.fields,field_description:hotel.field_hotel_resturant_serv_create_date
+#: model:ir.model.fields,field_description:hotel.field_hotel_services_create_date
+#: model:ir.model.fields,field_description:hotel.field_kitchen_kitchen_create_date
+#: model:ir.model.fields,field_description:hotel.field_lunch_clas_create_date
+#: model:ir.model.fields,field_description:hotel.field_room_hotelmanagement_create_date
+#: model:ir.model.fields,field_description:hotel.field_services_cost_hotel_create_date
+#: model:ir.model.fields,field_description:hotel.field_wizer_groupbooking_create_date
+#: model:ir.model.fields,field_description:hotel.field_wizer_gust_create_date
+#: model:ir.model.fields,field_description:hotel.field_wizerard_serv_create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: hotel
+#: model:ir.ui.view,arch_db:hotel.customer_hotel_profile
+#: model:ir.ui.view,arch_db:hotel.customers_tree_views
+msgid "Customer"
+msgstr "الزائر"
+
+#. module: hotel
+#: model:ir.ui.view,arch_db:hotel.customer_hotel_profile
+msgid "Customer's Name"
+msgstr "اسم الشركه"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_hotel_booking_room_dat
+#: model:ir.ui.view,arch_db:hotel.project_modeul_view_booking
+msgid "Date"
+msgstr "التاريخ"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_customers_profile_days_no
+msgid "Days Number"
+msgstr "عدد الايام"
+
+#. module: hotel
+#: model:ir.model.fields,help:hotel.field_employee_hotel_calendar_id
+msgid "Define the schedule of resource"
+msgstr "تحديد الجدول الزمني للموارد"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_group_booking_rooms_departure_date
+#: model:ir.model.fields,field_description:hotel.field_hotel_booking_room_departure_date
+msgid "Departure Date"
+msgstr "تاريخ المغادره"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_kitchen_kitchen_dinner
+#: model:ir.ui.view,arch_db:hotel.kitchen_hotel_manag
+msgid "Dinner"
+msgstr "وجبه العشاء"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_add_guests_display_name
+#: model:ir.model.fields,field_description:hotel.field_booking_booking_group_display_name
+#: model:ir.model.fields,field_description:hotel.field_breakfast_clas_display_name
+#: model:ir.model.fields,field_description:hotel.field_company_profile_display_name
+#: model:ir.model.fields,field_description:hotel.field_customers_profile_display_name
+#: model:ir.model.fields,field_description:hotel.field_dinner_clas_display_name
+#: model:ir.model.fields,field_description:hotel.field_employee_hotel_display_name
+#: model:ir.model.fields,field_description:hotel.field_group_booking_rooms_display_name
+#: model:ir.model.fields,field_description:hotel.field_guests_informations_display_name
+#: model:ir.model.fields,field_description:hotel.field_hotel_booking_room_display_name
+#: model:ir.model.fields,field_description:hotel.field_hotel_resturant_serv_display_name
+#: model:ir.model.fields,field_description:hotel.field_hotel_services_display_name
+#: model:ir.model.fields,field_description:hotel.field_kitchen_kitchen_display_name
+#: model:ir.model.fields,field_description:hotel.field_lunch_clas_display_name
+#: model:ir.model.fields,field_description:hotel.field_room_hotelmanagement_display_name
+#: model:ir.model.fields,field_description:hotel.field_services_cost_hotel_display_name
+#: model:ir.model.fields,field_description:hotel.field_wizer_groupbooking_display_name
+#: model:ir.model.fields,field_description:hotel.field_wizer_gust_display_name
+#: model:ir.model.fields,field_description:hotel.field_wizerard_serv_display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_company_profile_email
+#: model:ir.model.fields,field_description:hotel.field_hotel_booking_room_email
+msgid "E-mail"
+msgstr "البريد الالكتروني"
+
+#. module: hotel
+#: selection:services_cost_hotel,state:0
+msgid "Edit List"
+msgstr "تعديل القائمه"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_employee_hotel_time_efficiency
+msgid "Efficiency Factor"
+msgstr "معامل الكفاءة"
+
+#. module: hotel
+#: selection:breakfast.clas,food:0
+msgid "Eggs"
+msgstr "البيض"
+
+#. module: hotel
+#: selection:customers_profile,state:0
+msgid "Egyption"
+msgstr "مصري"
+
+#. module: hotel
+#: sql_constraint:hotel_booking_room:0
+msgid "Email id is unique change your custom email id"
+msgstr "البريد الإلكتروني لا يمكن تكراره "
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_hotel_booking_room_employee_res
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: hotel
+#: model:ir.module.category,name:hotel.emp_category
+msgid "Employee Hotel"
+msgstr "موظفين الفندق"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_group_booking_rooms_emp_name
+#: model:ir.model.fields,field_description:hotel.field_kitchen_kitchen_employee_kitchn
+msgid "Employee Name"
+msgstr "اسم الموظق"
+
+#. module: hotel
+#: model:res.groups,name:hotel.emp_permisions_group
+msgid "Employee Permisions"
+msgstr "حدود الموظف"
+
+#. module: hotel
+#: model:ir.ui.view,arch_db:hotel.group_booking_rooms
+#: model:ir.ui.view,arch_db:hotel.kitchen_hotel_manag
+#: model:ir.ui.view,arch_db:hotel.project_modeul_view_booking
+msgid "Employee's Name"
+msgstr "اسم الموظف"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_wizer_groupbooking_end_date
+#: model:ir.model.fields,field_description:hotel.field_wizer_gust_end_date
+msgid "End Date"
+msgstr "تاريخ الإنتهاء"
+
+#. module: hotel
+#: selection:room_hotelmanagement,room_type:0
+msgid "Family Room (1 to 4 person)"
+msgstr ""
+"12/5000\n"
+"غرفة العائلة(1-4)"
+
+#. module: hotel
+#: selection:customers_profile,gender:0
+msgid "Female"
+msgstr "اناث"
+
+#. module: hotel
+#: selection:room_hotelmanagement,room_type:0
+msgid "Female Dorm Room (6 person)"
+msgstr "غرفه النوم للستات(6)"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_customers_profile_first_name
+msgid "First Name"
+msgstr "الاسم الاول"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_room_hotelmanagement_floor
+msgid "Floor"
+msgstr "الطابق"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_breakfast_clas_food
+#: model:ir.model.fields,field_description:hotel.field_company_profile_food
+#: model:ir.model.fields,field_description:hotel.field_dinner_clas_food
+#: model:ir.model.fields,field_description:hotel.field_lunch_clas_food
+msgid "Food"
+msgstr "الطعام"
+
+#. module: hotel
+#: selection:customers_profile,state:0
+msgid "Forigen"
+msgstr "اجنبي"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_customers_profile_gender
+msgid "Gender "
+msgstr "جنس"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_booking_booking_group_guest_name
+msgid "Gest Name"
+msgstr "اسم النزيل"
+
+#. module: hotel
+#: model:ir.actions.act_window,help:hotel.hotel_management_Guest_Customer_Profile
+msgid "Gest's Profile"
+msgstr "صفحه النزيل"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_breakfast_clas_get_brek
+msgid "Get brek"
+msgstr "اخذ مشروب/راحه"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_dinner_clas_get_dinner
+msgid "Get dinner"
+msgstr "أخذ العشاء"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_lunch_clas_get_lunch
+msgid "Get lunch"
+msgstr "أخذ الغداء"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_hotel_services_getprice
+#: model:ir.model.fields,field_description:hotel.field_services_cost_hotel_getprice
+msgid "Getprice"
+msgstr "السعر"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_group_booking_rooms_gettotal
+msgid "Gettotal"
+msgstr "السعر الكلي"
+
+#. module: hotel
+#: selection:group_booking_rooms,booking_type:0
+msgid "Group"
+msgstr "مجموعه"
+
+#. module: hotel
+#: model:ir.actions.act_window,name:hotel.group_hotel_reserv
+#: model:ir.actions.report.xml,name:hotel.report_hotel_groupbooking_report
+#: model:ir.ui.menu,name:hotel.group_booking_reservition
+#: model:ir.ui.view,arch_db:hotel.group_booking_rooms
+#: model:ir.ui.view,arch_db:hotel.report_hotel_groupbooking
+#: model:ir.ui.view,arch_db:hotel.tree_form_group_booking
+msgid "Group Booking"
+msgstr "حجز لمجموعه"
+
+#. module: hotel
+#: model:ir.ui.view,arch_db:hotel.company_form_name
+msgid "Guest"
+msgstr "الزائر"
+
+#. module: hotel
+#: model:ir.ui.view,arch_db:hotel.report_hotel_guest
+msgid "Guest Booking"
+msgstr "للحجز للضيوف"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_guests_informations_id_gest
+msgid "Guest ID"
+msgstr "الزائر"
+
+#. module: hotel
+#: model:ir.ui.view,arch_db:hotel.project_modeul_view_booking
+msgid "Guest Information"
+msgstr "معلومات عن الزائر"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_hotel_booking_room_guest_name
+msgid "Guest Name"
+msgstr "اسم الزائر"
+
+#. module: hotel
+#: model:ir.actions.act_window,name:hotel.hotel_management_Guest_Customer_Profile
+#: model:ir.actions.report.xml,name:hotel.guest_hotel_profile
+#: model:ir.ui.menu,name:hotel.Customer_Profile_rooms
+#: model:res.groups,name:hotel.customer_showprofile
+msgid "Guest Profile"
+msgstr "صفحه الزائر"
+
+#. module: hotel
+#: model:ir.ui.menu,name:hotel.Room_managemnet_booking
+msgid "Guest Rooms"
+msgstr "غرفه الزائر"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_add_guests_guestget
+msgid "Guestget"
+msgstr "Guestget"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_company_profile_guestlist
+msgid "Guestlist"
+msgstr "Guestlist"
+
+#. module: hotel
+#: model:ir.ui.menu,name:hotel.hotel_management_Customer_
+msgid "Guests"
+msgstr "الزوار"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_company_profile_guest_infor
+msgid "Guests Informayions"
+msgstr "معلومات عن الزوار"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_breakfast_clas_hot_drinks
+#: model:ir.model.fields,field_description:hotel.field_dinner_clas_hot_drinks
+#: model:ir.model.fields,field_description:hotel.field_lunch_clas_hot_drinks
+msgid "Hot Drinks"
+msgstr "مشروبات ساخنه "
+
+#. module: hotel
+#: model:ir.ui.menu,name:hotel.categ_menus_booking_hotel
+msgid "Hotel Booking"
+msgstr "حجز في الفندق"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_services_cost_hotel_hotel_carprice
+msgid "Hotel Car Price"
+msgstr "سعر سياره الفندق"
+
+#. module: hotel
+#: model:ir.actions.report.xml,name:hotel.report_hotel_management
+msgid "Hotel Folio"
+msgstr "حجز الفندق"
+
+#. module: hotel
+#: model:ir.ui.menu,name:hotel.root_menu_booking
+msgid "Hotel Management"
+msgstr "اداره الفندق"
+
+#. module: hotel
+#: model:ir.ui.view,arch_db:hotel.report_hotel_folio
+#: model:ir.ui.view,arch_db:hotel.room_report_hotel_folio
+msgid "Hotel Reservation"
+msgstr "حجز فندقي"
+
+#. module: hotel
+#: model:ir.ui.menu,name:hotel.rooms_booking_guest
+msgid "Hotel Rooms"
+msgstr "غرف الفندق"
+
+#. module: hotel
+#: model:ir.ui.menu,name:hotel.hotel_management_services_hotel
+msgid "Hotel Services"
+msgstr "خدمات الفندق"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_add_guests_id
+#: model:ir.model.fields,field_description:hotel.field_add_guests_id_identification
+#: model:ir.model.fields,field_description:hotel.field_booking_booking_group_id
+#: model:ir.model.fields,field_description:hotel.field_breakfast_clas_id
+#: model:ir.model.fields,field_description:hotel.field_company_profile_id
+#: model:ir.model.fields,field_description:hotel.field_customers_profile_id
+#: model:ir.model.fields,field_description:hotel.field_dinner_clas_id
+#: model:ir.model.fields,field_description:hotel.field_employee_hotel_id
+#: model:ir.model.fields,field_description:hotel.field_group_booking_rooms_id
+#: model:ir.model.fields,field_description:hotel.field_guests_informations_id
+#: model:ir.model.fields,field_description:hotel.field_hotel_booking_room_id
+#: model:ir.model.fields,field_description:hotel.field_hotel_resturant_serv_id
+#: model:ir.model.fields,field_description:hotel.field_hotel_services_id
+#: model:ir.model.fields,field_description:hotel.field_kitchen_kitchen_id
+#: model:ir.model.fields,field_description:hotel.field_lunch_clas_id
+#: model:ir.model.fields,field_description:hotel.field_room_hotelmanagement_id
+#: model:ir.model.fields,field_description:hotel.field_services_cost_hotel_id
+#: model:ir.model.fields,field_description:hotel.field_wizer_groupbooking_id
+#: model:ir.model.fields,field_description:hotel.field_wizer_gust_id
+#: model:ir.model.fields,field_description:hotel.field_wizerard_serv_id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: hotel
+#: selection:breakfast.clas,cold_drinks:0 selection:dinner.clas,cold_drinks:0
+#: selection:lunch.clas,cold_drinks:0
+msgid "Ice Cream"
+msgstr "أيس كريم"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_customers_profile_identification_id
+msgid "Identification No "
+msgstr "رقم الهويه"
+
+#. module: hotel
+#: model:ir.model.fields,help:hotel.field_employee_hotel_active
+msgid "If the active field is set to False, it will allow you to hide the resource record without removing it."
+msgstr "إذا تم تعيين الحقل النشط إلى خطأ، سيسمح لك بإخفاء سجل المورد بدون إزالته."
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_customers_profile_image
+#: model:ir.model.fields,field_description:hotel.field_group_booking_rooms_image
+#: model:ir.model.fields,field_description:hotel.field_hotel_booking_room_image
+#: model:ir.model.fields,field_description:hotel.field_hotel_services_image
+#: model:ir.model.fields,field_description:hotel.field_kitchen_kitchen_image
+#: model:ir.model.fields,field_description:hotel.field_room_hotelmanagement_image
+msgid "Image"
+msgstr "الصورة"
+
+#. module: hotel
+#: model:ir.ui.view,arch_db:hotel.id_form_rooms
+msgid "Informations"
+msgstr "معلومات"
+
+#. module: hotel
+#: selection:breakfast.clas,cold_drinks:0 selection:dinner.clas,cold_drinks:0
+#: selection:lunch.clas,cold_drinks:0
+msgid "Juice"
+msgstr "عصير"
+
+#. module: hotel
+#: selection:company.profile,food:0
+msgid "Just breakfast + dinner"
+msgstr "فطار + عشاء فقط"
+
+#. module: hotel
+#: selection:company.profile,food:0
+msgid "Just breakfast + lunch + dinner"
+msgstr "فطار+غداء +عشاء"
+
+#. module: hotel
+#: model:ir.actions.act_window,name:hotel.kitchen_offers_drink
+#: model:ir.ui.menu,name:hotel.action_kitchen_menu
+#: model:ir.ui.view,arch_db:hotel.kitchen_hotel_manag
+msgid "Kitchen"
+msgstr "المطبخ"
+
+#. module: hotel
+#: model:res.groups,name:hotel.emp_permisions_kitchen
+msgid "Kitchen Employee"
+msgstr "موظف المطبخ (الطباخ)"
+
+#. module: hotel
+#: model:ir.ui.view,arch_db:hotel.kitchen_report_hotel
+msgid "Kitchen Food"
+msgstr "طعام المطبخ"
+
+#. module: hotel
+#: model:ir.actions.report.xml,name:hotel.kitchen_report_hotel_management
+msgid "Kitchen Report"
+msgstr "تقارير المطبخ"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_services_cost_hotel_conferencehall_bprice
+msgid "Large Conference  Price"
+msgstr "سعر قاعه المؤتمرات الكبيره"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_services_cost_hotel_weddinghall_bprice
+msgid "Large Wedding Price"
+msgstr "سعر القاعه الكبيره"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_add_guests___last_update
+#: model:ir.model.fields,field_description:hotel.field_booking_booking_group___last_update
+#: model:ir.model.fields,field_description:hotel.field_breakfast_clas___last_update
+#: model:ir.model.fields,field_description:hotel.field_company_profile___last_update
+#: model:ir.model.fields,field_description:hotel.field_customers_profile___last_update
+#: model:ir.model.fields,field_description:hotel.field_dinner_clas___last_update
+#: model:ir.model.fields,field_description:hotel.field_employee_hotel___last_update
+#: model:ir.model.fields,field_description:hotel.field_group_booking_rooms___last_update
+#: model:ir.model.fields,field_description:hotel.field_guests_informations___last_update
+#: model:ir.model.fields,field_description:hotel.field_hotel_booking_room___last_update
+#: model:ir.model.fields,field_description:hotel.field_hotel_resturant_serv___last_update
+#: model:ir.model.fields,field_description:hotel.field_hotel_services___last_update
+#: model:ir.model.fields,field_description:hotel.field_kitchen_kitchen___last_update
+#: model:ir.model.fields,field_description:hotel.field_lunch_clas___last_update
+#: model:ir.model.fields,field_description:hotel.field_room_hotelmanagement___last_update
+#: model:ir.model.fields,field_description:hotel.field_services_cost_hotel___last_update
+#: model:ir.model.fields,field_description:hotel.field_wizer_groupbooking___last_update
+#: model:ir.model.fields,field_description:hotel.field_wizer_gust___last_update
+#: model:ir.model.fields,field_description:hotel.field_wizerard_serv___last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_customers_profile_last_name
+msgid "Last Name"
+msgstr "الاسم الاخير"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_add_guests_write_uid
+#: model:ir.model.fields,field_description:hotel.field_booking_booking_group_write_uid
+#: model:ir.model.fields,field_description:hotel.field_breakfast_clas_write_uid
+#: model:ir.model.fields,field_description:hotel.field_company_profile_write_uid
+#: model:ir.model.fields,field_description:hotel.field_customers_profile_write_uid
+#: model:ir.model.fields,field_description:hotel.field_dinner_clas_write_uid
+#: model:ir.model.fields,field_description:hotel.field_employee_hotel_write_uid
+#: model:ir.model.fields,field_description:hotel.field_group_booking_rooms_write_uid
+#: model:ir.model.fields,field_description:hotel.field_guests_informations_write_uid
+#: model:ir.model.fields,field_description:hotel.field_hotel_booking_room_write_uid
+#: model:ir.model.fields,field_description:hotel.field_hotel_resturant_serv_write_uid
+#: model:ir.model.fields,field_description:hotel.field_hotel_services_write_uid
+#: model:ir.model.fields,field_description:hotel.field_kitchen_kitchen_write_uid
+#: model:ir.model.fields,field_description:hotel.field_lunch_clas_write_uid
+#: model:ir.model.fields,field_description:hotel.field_room_hotelmanagement_write_uid
+#: model:ir.model.fields,field_description:hotel.field_services_cost_hotel_write_uid
+#: model:ir.model.fields,field_description:hotel.field_wizer_groupbooking_write_uid
+#: model:ir.model.fields,field_description:hotel.field_wizer_gust_write_uid
+#: model:ir.model.fields,field_description:hotel.field_wizerard_serv_write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_add_guests_write_date
+#: model:ir.model.fields,field_description:hotel.field_booking_booking_group_write_date
+#: model:ir.model.fields,field_description:hotel.field_breakfast_clas_write_date
+#: model:ir.model.fields,field_description:hotel.field_company_profile_write_date
+#: model:ir.model.fields,field_description:hotel.field_customers_profile_write_date
+#: model:ir.model.fields,field_description:hotel.field_dinner_clas_write_date
+#: model:ir.model.fields,field_description:hotel.field_employee_hotel_write_date
+#: model:ir.model.fields,field_description:hotel.field_group_booking_rooms_write_date
+#: model:ir.model.fields,field_description:hotel.field_guests_informations_write_date
+#: model:ir.model.fields,field_description:hotel.field_hotel_booking_room_write_date
+#: model:ir.model.fields,field_description:hotel.field_hotel_resturant_serv_write_date
+#: model:ir.model.fields,field_description:hotel.field_hotel_services_write_date
+#: model:ir.model.fields,field_description:hotel.field_kitchen_kitchen_write_date
+#: model:ir.model.fields,field_description:hotel.field_lunch_clas_write_date
+#: model:ir.model.fields,field_description:hotel.field_room_hotelmanagement_write_date
+#: model:ir.model.fields,field_description:hotel.field_services_cost_hotel_write_date
+#: model:ir.model.fields,field_description:hotel.field_wizer_groupbooking_write_date
+#: model:ir.model.fields,field_description:hotel.field_wizer_gust_write_date
+#: model:ir.model.fields,field_description:hotel.field_wizerard_serv_write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_services_cost_hotel_state
+msgid "List Services"
+msgstr "قائمه الخدمات"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_kitchen_kitchen_lunch
+msgid "Lunch"
+msgstr "الغداء"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_customers_profile_Make_reservation
+msgid "Make a Reservation"
+msgstr "اكد الحجز"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_company_profile_Make_reservation
+msgid "Make reservation"
+msgstr "اكد الحجز"
+
+#. module: hotel
+#: selection:customers_profile,gender:0
+msgid "Male"
+msgstr "رجل"
+
+#. module: hotel
+#: selection:room_hotelmanagement,room_type:0
+msgid "Male Dorm Room (6 person)"
+msgstr "غرف نوم للرجاله (6)"
+
+#. module: hotel
+#: model:res.groups,name:hotel.manager_permisions_group
+msgid "Manager Hotel"
+msgstr "مدير الفندق"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_guests_informations_many_guest
+msgid "Many guest"
+msgstr "الزوار"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_customers_profile_marital
+msgid "Marital Status"
+msgstr "الحالة الاجتماعية"
+
+#. module: hotel
+#: selection:dinner.clas,food:0 selection:lunch.clas,food:0
+msgid "Meet"
+msgstr "اللحم"
+
+#. module: hotel
+#: selection:room_hotelmanagement,room_type:0
+msgid "Mix Dorm Room (6 person)"
+msgstr "غرفه النوم للجنسين(6)"
+
+#. module: hotel
+#: selection:dinner.clas,food:0 selection:lunch.clas,food:0
+msgid "Molokhia"
+msgstr "ملوخيه"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_hotel_booking_room_money_paid
+msgid "Money Paid"
+msgstr "المال المدفوع"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_add_guests_name
+#: model:ir.model.fields,field_description:hotel.field_company_profile_name
+#: model:ir.model.fields,field_description:hotel.field_customers_profile_name
+#: model:ir.model.fields,field_description:hotel.field_employee_hotel_name
+#: model:ir.model.fields,field_description:hotel.field_guests_informations_name
+#: model:ir.model.fields,field_description:hotel.field_hotel_resturant_serv_name
+#: model:ir.model.fields,field_description:hotel.field_room_hotelmanagement_name
+#: model:ir.model.fields,field_description:hotel.field_wizerard_serv_name
+msgid "Name"
+msgstr "الاسم"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_customers_profile_state
+msgid "Nationality"
+msgstr "الجنسيه"
+
+#. module: hotel
+#: model:ir.model,name:hotel.model_hotel_services
+#: model:ir.model,name:hotel.model_services_cost_hotel
+#: model:ir.model,name:hotel.model_wizerard_serv
+msgid "New Description"
+msgstr "وصف جديد"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_hotel_booking_room_night_no
+msgid "Night Nomber"
+msgstr "عدد الليالي"
+
+#. module: hotel
+#: selection:hotel_services,spa:0
+msgid "Normal"
+msgstr "عادي"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_customers_profile_notes
+#: model:ir.model.fields,field_description:hotel.field_room_hotelmanagement_notes
+msgid "Notes"
+msgstr "الملاحظات"
+
+#. module: hotel
+#: selection:room_hotelmanagement,room_view:0
+msgid "Nothing"
+msgstr "لا شي"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_booking_booking_group_nom
+msgid "Number"
+msgstr "العدد"
+
+#. module: hotel
+#: model:ir.actions.act_window,help:hotel.kitchen_offers_drink
+msgid "Offers Food and Drinks"
+msgstr "عرض الطعام والشراب"
+
+#. module: hotel
+#: selection:breakfast.clas,food:0
+msgid "Olive"
+msgstr "زيتون"
+
+#. module: hotel
+#: selection:customers_profile,gender:0
+msgid "Other"
+msgstr "اخر"
+
+#. module: hotel
+#: model:ir.ui.view,arch_db:hotel.customer_hotel_profile
+#: model:ir.ui.view,arch_db:hotel.id_form_rooms
+msgid "Other Information ..."
+msgstr "معلومات أخرى ..."
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_customers_profile_paid_money
+msgid "Paid money"
+msgstr "المال المدفوع"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_company_profile_parking
+#: model:ir.model.fields,field_description:hotel.field_hotel_services_parking
+#: model:ir.model.fields,field_description:hotel.field_services_cost_hotel_parking
+msgid "Parking"
+msgstr "الجراج"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_services_cost_hotel_parking_price
+msgid "Parking Price"
+msgstr "سعر الجراج"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_customers_profile_passport_id
+msgid "Passport No "
+msgstr "رقم جواز السفر"
+
+#. module: hotel
+#: selection:dinner.clas,food:0 selection:lunch.clas,food:0
+msgid "Pasta"
+msgstr "مكرونه"
+
+#. module: hotel
+#: selection:breakfast.clas,cold_drinks:0 selection:dinner.clas,cold_drinks:0
+#: selection:lunch.clas,cold_drinks:0
+msgid "Pepsi"
+msgstr "بيبسي"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_add_guests_phone
+#: model:ir.model.fields,field_description:hotel.field_company_profile_phone
+msgid "Phone"
+msgstr "هاتف"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_customers_profile_phone
+msgid "Phone Number"
+msgstr "رقم التليفون"
+
+#. module: hotel
+#: selection:dinner.clas,food:0 selection:lunch.clas,food:0
+msgid "Potatos"
+msgstr "بطاطس"
+
+#. module: hotel
+#: model:ir.ui.view,arch_db:hotel.report_hotel_guest
+msgid "Pound"
+msgstr "جنيه"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_guests_informations_pr
+msgid "Pr"
+msgstr "Pr"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_company_profile_total
+#: model:ir.model.fields,field_description:hotel.field_room_hotelmanagement_price
+#: model:ir.ui.view,arch_db:hotel.id_form_rooms
+msgid "Price"
+msgstr "السعر"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_company_profile_pricsroom
+#: model:ir.model.fields,field_description:hotel.field_group_booking_rooms_total
+msgid "Price For Rooms"
+msgstr "سعر الليله"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_hotel_booking_room_cost
+msgid "Price per night"
+msgstr "سعر الليله"
+
+#. module: hotel
+#: model:ir.ui.view,arch_db:hotel.hotel_wizers_form_groupbooking
+#: model:ir.ui.view,arch_db:hotel.hotel_wizers_gust
+msgid "Print"
+msgstr "اطبع"
+
+#. module: hotel
+#: selection:room_hotelmanagement,room_type:0
+msgid "Private Room (1 to 3 person)"
+msgstr "غرفه خاصه (1-3)"
+
+#. module: hotel
+#: model:ir.ui.view,arch_db:hotel.customer_hotel_profile
+msgid "Public Informaton"
+msgstr "معلومات عامه"
+
+#. module: hotel
+#: model:ir.ui.view,arch_db:hotel.company_form_name
+msgid "Public Services"
+msgstr "خدمات عامه"
+
+#. module: hotel
+#: model:ir.actions.act_window,help:hotel.Room_hotel_guest_booking
+msgid "Registration of hotel rooms"
+msgstr "حجز غرفه في الفندق"
+
+#. module: hotel
+#: model:ir.model.fields,help:hotel.field_employee_hotel_user_id
+msgid "Related user name for the resource to manage its access."
+msgstr "اسم المستخدم ذو الصلة للمورد لإدارة وصوله."
+
+#. module: hotel
+#: model:ir.ui.view,arch_db:hotel.project_modeul_view_booking
+msgid "Remaining Money"
+msgstr "المال الباقي"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_customers_profile_remaining_money
+#: model:ir.model.fields,field_description:hotel.field_hotel_booking_room_remaining_money
+msgid "Remaining money"
+msgstr "المال الباقي"
+
+#. module: hotel
+#: model:ir.ui.menu,name:hotel.report_ID_categ
+#: model:ir.ui.menu,name:hotel.report_categ
+msgid "Reports"
+msgstr "التقارير"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_customers_profile_reser_Id
+msgid "Reser id"
+msgstr "Reser id"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_room_hotelmanagement_reserv
+msgid "Reserv"
+msgstr "Reserv"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_group_booking_rooms_workflow
+#: model:ir.model.fields,field_description:hotel.field_hotel_booking_room_workflow
+#: model:ir.ui.menu,name:hotel.categ_menus_booking
+msgid "Reservation"
+msgstr "الحجز"
+
+#. module: hotel
+#: selection:group_booking_rooms,workflow:0
+#: selection:hotel_booking_room,workflow:0
+msgid "Reservation Cancel"
+msgstr "الغاء الحجز"
+
+#. module: hotel
+#: selection:group_booking_rooms,workflow:0
+#: selection:hotel_booking_room,workflow:0
+msgid "Reservation Confirmation"
+msgstr "تاكيد الحجز"
+
+#. module: hotel
+#: model:ir.ui.view,arch_db:hotel.group_booking_rooms
+#: model:ir.ui.view,arch_db:hotel.project_modeul_view_booking
+msgid "Reservation Date"
+msgstr "تاريخ الحجز"
+
+#. module: hotel
+#: selection:group_booking_rooms,workflow:0
+#: selection:hotel_booking_room,workflow:0
+msgid "Reservation Form"
+msgstr "صفحه الحجز"
+
+#. module: hotel
+#: model:ir.ui.menu,name:hotel.Wizerview_guest_hotels
+msgid "Reservation Geust"
+msgstr "الحجز للضيوف"
+
+#. module: hotel
+#: model:ir.ui.menu,name:hotel.Wizer_view_groupreports
+msgid "Reservation Group"
+msgstr "حجز لمجموعه"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_group_booking_rooms_filo
+#: model:ir.model.fields,field_description:hotel.field_hotel_booking_room_filo
+#: model:ir.ui.view,arch_db:hotel.group_booking_rooms
+#: model:ir.ui.view,arch_db:hotel.project_modeul_view_booking
+msgid "Reservation number"
+msgstr "رقم الحجز"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_room_hotelmanagement_state
+msgid "Reserved"
+msgstr "محجوز"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_employee_hotel_resource_type
+msgid "Resource Type"
+msgstr "نوع المصدر"
+
+#. module: hotel
+#: model:ir.ui.view,arch_db:hotel.customer_hotel_profile
+msgid "Room"
+msgstr "الغرف"
+
+#. module: hotel
+#: model:ir.actions.report.xml,name:hotel.Room_report_hotel_management
+msgid "Room Folio"
+msgstr "حجز الغرفه"
+
+#. module: hotel
+#: model:ir.ui.view,arch_db:hotel.customer_hotel_profile
+msgid "Room Informaton"
+msgstr "معلومات عن الغرف"
+
+#. module: hotel
+#: model:ir.actions.act_window,help:hotel.Room_hotel_guest_booking
+msgid "Room Management"
+msgstr "اداره الغرف"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_booking_booking_group_room_no
+#: model:ir.model.fields,field_description:hotel.field_customers_profile_room_no
+#: model:ir.model.fields,field_description:hotel.field_guests_informations_room
+#: model:ir.model.fields,field_description:hotel.field_room_hotelmanagement_room_no
+msgid "Room Number"
+msgstr "رقم الغرفه "
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_customers_profile_night_price
+#: model:ir.ui.view,arch_db:hotel.company_form_name
+#: model:ir.ui.view,arch_db:hotel.project_modeul_view_booking
+msgid "Room Price"
+msgstr "سعر الغرفه"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_hotel_services_room_services
+#: model:ir.model.fields,field_description:hotel.field_services_cost_hotel_room_services
+msgid "Room Services"
+msgstr "خدمات الغرفه"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_services_cost_hotel_roomservices_price
+msgid "Room Services Price"
+msgstr "سعر خدمات الغرفه"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_room_hotelmanagement_room_type
+#: model:ir.ui.view,arch_db:hotel.group_booking_rooms
+#: model:ir.ui.view,arch_db:hotel.project_modeul_view_booking
+msgid "Room Type"
+msgstr "نوع الغرفه "
+
+#. module: hotel
+#: model:ir.ui.view,arch_db:hotel.id_form_rooms
+msgid "Room View"
+msgstr "الغرفه تطل على "
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_room_hotelmanagement_room_view
+msgid "Room view"
+msgstr "المنظر التي تطلع عليها الغرفه "
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_company_profile_roomprice
+msgid "Roomprice"
+msgstr "سعر الغرفه"
+
+#. module: hotel
+#: model:ir.actions.act_window,name:hotel.Room_hotel_guest_booking
+#: model:ir.ui.menu,name:hotel.rooms_booking_guest_lists
+msgid "Rooms"
+msgstr "الغرف"
+
+#. module: hotel
+#: model:ir.ui.view,arch_db:hotel.id_form_rooms
+msgid "Rooms Management"
+msgstr "اداره الغرف"
+
+#. module: hotel
+#: model:ir.ui.view,arch_db:hotel.hotel_wizers_form_groupbooking
+#: model:ir.ui.view,arch_db:hotel.hotel_wizers_gust
+msgid "Select Bookining gest"
+msgstr "اختار الزائر "
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_company_profile_gust_domend
+msgid "Select Guest"
+msgstr "اختار الزائر"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_hotel_booking_room_check_room
+msgid "Select Room"
+msgstr "اختار الغرفه"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_group_booking_rooms_selectrooms
+msgid "Select Rooms"
+msgstr "اختار الغرفه"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_hotel_services_serv_custom
+#: model:ir.model.fields,field_description:hotel.field_services_cost_hotel_serv_custom
+msgid "Serv custom"
+msgstr "خدمات الزائر"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_customers_profile_serv_total
+msgid "Serv total"
+msgstr "اجمالي الخدمات"
+
+#. module: hotel
+#: model:ir.ui.menu,name:hotel.hotel_management_services
+#: model:ir.ui.view,arch_db:hotel.report_hotel_guest
+msgid "Services"
+msgstr "الخدمات"
+
+#. module: hotel
+#: model:ir.ui.view,arch_db:hotel.customer_hotel_profile
+msgid "Services Cost"
+msgstr "سعر الخدمات"
+
+#. module: hotel
+#: selection:customers_profile,marital:0
+#: selection:hotel_booking_room,booking_type:0
+msgid "Single"
+msgstr "فردي"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_services_cost_hotel_conferencehall_sprice
+msgid "Small Conference  Price"
+msgstr "سعر قاعه المؤتمرات الصغيره"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_services_cost_hotel_weddinghall_sprice
+msgid "Small Wedding Price"
+msgstr "سعر قاعه الافراح الصغيره"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_hotel_services_spa
+#: model:ir.model.fields,field_description:hotel.field_services_cost_hotel_spa
+msgid "Spa"
+msgstr "منتجع صحي"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_services_cost_hotel_spa_normal
+msgid "Spa Normal"
+msgstr "ماساج عادي"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_services_cost_hotel_spa_spcial
+msgid "Spa Spcial"
+msgstr "ماساج خاص"
+
+#. module: hotel
+#: selection:room_hotelmanagement,name:0
+msgid "Standard Room"
+msgstr "غرف عاديه"
+
+#. module: hotel
+#: selection:room_hotelmanagement,room_type:0
+msgid "Stander Room (1 to 2 person)"
+msgstr "غرفه عاديه (1-2)"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_wizer_groupbooking_start_date
+#: model:ir.model.fields,field_description:hotel.field_wizer_gust_start_date
+msgid "Start Date"
+msgstr "تاريخ البدء"
+
+#. module: hotel
+#: model:ir.ui.view,arch_db:hotel.id_form_rooms
+msgid "State"
+msgstr "المحافظة"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_hotel_services_subtotal
+#: model:ir.model.fields,field_description:hotel.field_services_cost_hotel_subtotal
+msgid "Subtotal"
+msgstr "المجموع"
+
+#. module: hotel
+#: selection:room_hotelmanagement,name:0
+msgid "Suite"
+msgstr "جناح"
+
+#. module: hotel
+#: selection:room_hotelmanagement,room_view:0
+msgid "Swimming pool"
+msgstr "حمام السباحه"
+
+#. module: hotel
+#: selection:breakfast.clas,hot_drinks:0 selection:dinner.clas,hot_drinks:0
+#: selection:lunch.clas,hot_drinks:0
+msgid "Tea"
+msgstr "شاي"
+
+#. module: hotel
+#: model:ir.ui.view,arch_db:hotel.kitchen_report_hotel
+msgid "The breakfast..."
+msgstr "الفطار......"
+
+#. module: hotel
+#: model:ir.model.fields,help:hotel.field_employee_hotel_time_efficiency
+msgid "This field depict the efficiency of the resource to complete tasks. e.g  resource put alone on a phase of 5 days with 5 tasks assigned to him, will show a load of 100% for this phase by default, but if we put a efficiency of 200%, then his load will only be 50%."
+msgstr "هذا الحقل يصف كفائة المورد لإكمال المهام. مثلا عند تعيين مرحلة من 5 أيام و5 مهام سوف يظهر 100% إشغال لهذه المرحلة بشكل إفتراضي. لكن إذا وضعنا كفائة 200% سوف يكون الإشغال فقط 50%"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_kitchen_kitchen_today_date
+msgid "Today's Date"
+msgstr "تاريخ اليوم"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_customers_profile_Total
+msgid "Total"
+msgstr "المجموع"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_hotel_booking_room_total_cost
+msgid "Total Cost"
+msgstr "مجموع التكلفه"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_company_profile_totalprice
+#: model:ir.model.fields,field_description:hotel.field_customers_profile_total_price
+#: model:ir.model.fields,field_description:hotel.field_group_booking_rooms_total_price
+msgid "Total Price"
+msgstr "السعر الكلي"
+
+#. module: hotel
+#: model:ir.ui.view,arch_db:hotel.customer_hotel_profile
+msgid "Total cost"
+msgstr "السعر الكلي"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_company_profile_hotel_car
+#: model:ir.model.fields,field_description:hotel.field_hotel_services_hotel_car
+#: model:ir.model.fields,field_description:hotel.field_services_cost_hotel_hotel_car
+msgid "Use the hotel car"
+msgstr "استخدام سياره الفندق"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_employee_hotel_user_id
+msgid "User"
+msgstr "المستخدم"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_company_profile_wedding_hall
+#: model:ir.model.fields,field_description:hotel.field_hotel_services_wedding_hall
+#: model:ir.model.fields,field_description:hotel.field_services_cost_hotel_wedding_hall
+msgid "Wedding Hall"
+msgstr "قاعه الافراح"
+
+#. module: hotel
+#: selection:customers_profile,marital:0
+msgid "Widower"
+msgstr "الارمل"
+
+#. module: hotel
+#: selection:company.profile,food:0
+msgid "Without Eating"
+msgstr "بدون طعام"
+
+#. module: hotel
+#: model:ir.actions.act_window,name:hotel.hot_geust_reports_hotel
+#: model:ir.actions.act_window,name:hotel.hot_wiz_group_reports
+msgid "Wizerer"
+msgstr "Wizerer"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_employee_hotel_calendar_id
+msgid "Working Time"
+msgstr "ساعات العمل"
+
+#. module: hotel
+#: model:ir.actions.act_window,help:hotel.BookingRooms
+msgid "You can book rooms"
+msgstr "تستطيع ان تحجز غرفه "
+
+#. module: hotel
+#: model:ir.model,name:hotel.model_add_guests
+msgid "add.guests"
+msgstr "add.guests"
+
+#. module: hotel
+#: model:ir.model,name:hotel.model_booking_booking_group
+msgid "booking_booking_group"
+msgstr "booking_booking_group"
+
+#. module: hotel
+#: model:ir.model.fields,field_description:hotel.field_booking_booking_group_booking_group
+msgid "booking_group"
+msgstr "booking_group"
+
+#. module: hotel
+#: model:ir.model,name:hotel.model_breakfast_clas
+msgid "breakfast.clas"
+msgstr "breakfast.clas"
+
+#. module: hotel
+#: model:ir.ui.view,arch_db:hotel.group_booking_rooms
+#: model:ir.ui.view,arch_db:hotel.project_modeul_view_booking
+msgid "cancel booking"
+msgstr "الغاء الحجز"
+
+#. module: hotel
+#: selection:dinner.clas,food:0 selection:lunch.clas,food:0
+msgid "chickens"
+msgstr "الدجاج"
+
+#. module: hotel
+#: model:ir.model,name:hotel.model_company_profile
+msgid "company.profile"
+msgstr "company.profile"
+
+#. module: hotel
+#: model:ir.ui.view,arch_db:hotel.group_booking_rooms
+#: model:ir.ui.view,arch_db:hotel.project_modeul_view_booking
+msgid "confirmation"
+msgstr "تاكيد"
+
+#. module: hotel
+#: model:ir.model,name:hotel.model_customers_profile
+msgid "customers_profile"
+msgstr "غرفه الزائر"
+
+#. module: hotel
+#: model:ir.model,name:hotel.model_dinner_clas
+msgid "dinner.clas"
+msgstr "dinner.clas"
+
+#. module: hotel
+#: selection:customers_profile,marital:0
+msgid "divorced"
+msgstr "divorced"
+
+#. module: hotel
+#: model:ir.model,name:hotel.model_employee_hotel
+msgid "employee_hotel"
+msgstr "employee_hotel"
+
+#. module: hotel
+#: model:ir.model,name:hotel.model_group_booking_rooms
+msgid "group_booking_rooms"
+msgstr "group_booking_rooms"
+
+#. module: hotel
+#: model:ir.model,name:hotel.model_guests_informations
+msgid "guests_informations"
+msgstr "guests_informations"
+
+#. module: hotel
+#: model:ir.ui.view,arch_db:hotel.project_modeul_view_booking
+msgid "gust's email"
+msgstr "البريد الالكتروني للزائر"
+
+#. module: hotel
+#: model:ir.model,name:hotel.model_hotel_booking_room
+msgid "hotel_booking_room"
+msgstr "hotel_booking_room"
+
+#. module: hotel
+#: model:ir.model,name:hotel.model_hotel_resturant_serv
+msgid "hotel_resturant_serv"
+msgstr "hotel_resturant_serv"
+
+#. module: hotel
+#: model:ir.ui.view,arch_db:hotel.kitchen_hotel_manag
+msgid "lunch"
+msgstr "الغداء"
+
+#. module: hotel
+#: model:ir.model,name:hotel.model_lunch_clas
+msgid "lunch.clas"
+msgstr "lunch.clas"
+
+#. module: hotel
+#: selection:customers_profile,marital:0
+msgid "married"
+msgstr "متزوج"
+
+#. module: hotel
+#: model:ir.model,name:hotel.model_room_hotelmanagement
+msgid "room_hotelmanagement"
+msgstr "room_hotelmanagement"
+
+#. module: hotel
+#: selection:hotel_services,spa:0
+msgid "special"
+msgstr "خاص"
+
+#. module: hotel
+#: selection:room_hotelmanagement,room_view:0
+msgid "street"
+msgstr "الطريق"
+
+#. module: hotel
+#: model:ir.ui.view,arch_db:hotel.kitchen_report_hotel
+msgid "the Dinner..."
+msgstr "العشاء......."
+
+#. module: hotel
+#: model:ir.actions.act_window,help:hotel.kitchen_offers_drink
+msgid "the kitchen"
+msgstr "المطبخ"
+
+#. module: hotel
+#: model:ir.model,name:hotel.model_kitchen_kitchen
+msgid "the kitchen Offers Food and Drinks"
+msgstr "المطبخ يقدم ألمأكولات والمشروبات"
+
+#. module: hotel
+#: model:ir.ui.view,arch_db:hotel.kitchen_report_hotel
+msgid "the lunch..."
+msgstr "الغداء..."
+
+#. module: hotel
+#: model:ir.model,name:hotel.model_wizer_groupbooking
+msgid "wizer.groupbooking"
+msgstr "wizer.groupbooking"
+
+#. module: hotel
+#: model:ir.model,name:hotel.model_wizer_gust
+msgid "wizer.gust"
+msgstr "wizer.gust"

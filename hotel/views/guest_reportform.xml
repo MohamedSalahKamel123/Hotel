@@ -1,0 +1,14 @@
+<openerp>
+    <data>
+
+        <report id="guest_hotel_profile" string="Guest Profile" model="customers_profile" report_type="qweb-pdf"
+                file="hotel.report_hotel_guest" name="hotel.report_hotel_guest" menu="True"
+        />
+
+
+
+
+    </data>
+
+
+</openerp>

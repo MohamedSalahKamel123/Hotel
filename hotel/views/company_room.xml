@@ -1,0 +1,25 @@
+<openerp>
+    <data>
+
+
+        <record id="company_room_group" model="ir.actions.act_window">
+            <field name="name">Group Rooms</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">company_rooms_hotel</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+                <!-- Add Text Here -->
+              </p><p>
+                <!-- More details about what a user can do with this object will be OK -->
+              </p>
+            </field>
+        </record>
+
+        <!-- This Menu Item must have a parent and an action -->
+        <menuitem id="group_room_company" name="Group Rooms" parent="rooms_booking_guest_lists" action="company_room_group" sequence="2"/>
+
+
+    </data>
+
+</openerp>

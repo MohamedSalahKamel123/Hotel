@@ -1,0 +1,165 @@
+<openerp>
+
+    <data>
+
+        <template id="kitchen_report_hotel">
+            <t t-call="report.html_container">
+                <t t-call="report.external_layout">
+                    <div class="page">
+                        <br/>
+                        <br/>
+                        <div class="row">
+                            <h2>
+                                <span>
+                                    <center>Kitchen Food</center>
+                                </span>
+                            </h2>
+                        </div>
+
+                        <div class="row mt32 mb32">
+                            <div class="text-center">
+                                <h2>
+                                    <span>
+                                        <t t-foreach="docs" t-as="o">
+                                            <span t-esc="o.today_date"/>
+
+                                        </t>
+
+                                    </span>
+                                </h2>
+
+                            </div>
+                            <h2>The breakfast...</h2>
+                        </div>
+
+
+                        <table class="table table-condensed">
+                            <tr>
+
+                                <td>
+                                    <strong>Food</strong>
+                                </td>
+                                <td>
+                                    <strong>Hot Drinks</strong>
+                                </td>
+                                <td>
+                                    <strong>Cold Drinks</strong>
+                                </td>
+
+                            </tr>
+
+                            <t t-foreach="docs" t-as="o">
+                                <t t-foreach="o.breakfas" t-as="x">
+
+                                    <tr>
+                                        <td>
+                                            <span t-esc="x.food"/>
+                                        </td>
+                                        <td>
+                                            <span t-esc="x.hot_drinks"/>
+                                        </td>
+                                        <td>
+                                            <span t-esc="x.cold_drinks"/>
+                                        </td>
+
+                                    </tr>
+                                </t>
+                            </t>
+                        </table>
+
+<!--==============================================================================================================-->
+                    <div class="row mt32 mb32">
+                            <h2>the lunch...</h2>
+                        </div>
+
+
+                        <table class="table table-condensed">
+                            <tr>
+
+                                <td>
+                                    <strong>Food</strong>
+                                </td>
+                                <td>
+                                    <strong>Hot Drinks</strong>
+                                </td>
+                                <td>
+                                    <strong>Cold Drinks</strong>
+                                </td>
+
+                            </tr>
+
+                            <t t-foreach="docs" t-as="o">
+                                <t t-foreach="o.lunch" t-as="x">
+
+                                    <tr>
+                                        <td>
+                                            <span t-esc="x.food"/>
+                                        </td>
+                                        <td>
+                                            <span t-esc="x.hot_drinks"/>
+                                        </td>
+                                        <td>
+                                            <span t-esc="x.cold_drinks"/>
+                                        </td>
+
+                                    </tr>
+                                </t>
+                            </t>
+                        </table>
+
+<!--===========================================================================================================================-->
+
+                        <div class="row mt32 mb32">
+                            <h2>the Dinner...</h2>
+                        </div>
+
+
+                        <table class="table table-condensed">
+                            <tr>
+
+                                <td>
+                                    <strong>Food</strong>
+                                </td>
+                                <td>
+                                    <strong>Hot Drinks</strong>
+                                </td>
+                                <td>
+                                    <strong>Cold Drinks</strong>
+                                </td>
+
+                            </tr>
+
+                            <t t-foreach="docs" t-as="o">
+                                <t t-foreach="o.dinner" t-as="x">
+
+                                    <tr>
+                                        <td>
+                                            <span t-esc="x.food"/>
+                                        </td>
+                                        <td>
+                                            <span t-esc="x.hot_drinks"/>
+                                        </td>
+                                        <td>
+                                            <span t-esc="x.cold_drinks"/>
+                                        </td>
+
+                                    </tr>
+                                </t>
+                            </t>
+                        </table>
+
+
+
+
+
+
+
+
+
+                    </div>
+                </t>
+            </t>
+        </template>
+    </data>
+
+</openerp>

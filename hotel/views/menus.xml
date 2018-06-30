@@ -1,0 +1,203 @@
+<openerp>
+
+    <data>
+
+
+        <record id="hotel_management_Guest_Customer_Profile" model="ir.actions.act_window">
+            <field name="name">Guest Profile</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">customers_profile</field>
+            <field name="view_mode">kanban,tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    <h1>Gest's Profile</h1>
+                </p>
+                <p>
+                    Create Guest Profiel
+                </p>
+            </field>
+        </record>
+
+
+        <menuitem id="hotel_management_Customer_prof1" name=" Customers of Hotel" parent="root_menu_booking"
+                  sequence="4"/>
+
+        <!-- This Menu Item Must have a parent -->
+        <menuitem id="hotel_management_Customer_" name="Guests" parent="hotel_management_Customer_prof1"
+                  sequence="2"/>
+
+        <menuitem id="Customer_Profile_rooms" name="Guest Profile" parent="hotel_management_Customer_"
+                  action="hotel_management_Guest_Customer_Profile" sequence="1"/>
+
+
+        <!--&lt;!&ndash;//===========================================================================================================&ndash;&gt;-->
+
+        <!--<record id="hotel_management_services_actions" model="ir.actions.act_window">-->
+            <!--<field name="name">services</field>-->
+            <!--<field name="type">ir.actions.act_window</field>-->
+            <!--<field name="res_model">hotel_services</field>-->
+            <!--<field name="view_mode">tree,form</field>-->
+            <!--<field name="help" type="html">-->
+                <!--<p class="oe_view_nocontent_create">-->
+                     <!--<h1>Services</h1>-->
+                <!--</p>-->
+                <!--<p>-->
+                     <!--More details about what a services can do with Hotel will be OK-->
+                <!--</p>-->
+            <!--</field>-->
+        <!--</record>-->
+
+
+
+
+
+
+
+        <menuitem id="hotel_management_services" name="Services" parent="root_menu_booking" sequence="6"/>
+
+        <menuitem id="hotel_management_services_hotel" name="Hotel Services" parent="hotel_management_services"
+                  sequence="7"/>
+
+
+<!--==========================================================================================================================-->
+        <!--<record id="Resturant_services_hotel" model="ir.actions.act_window">-->
+            <!--<field name="name">Resturant</field>-->
+            <!--<field name="type">ir.actions.act_window</field>-->
+            <!--<field name="res_model">hotel_resturant_serv</field>-->
+            <!--<field name="view_mode">tree,form</field>-->
+            <!--<field name="help" type="html">-->
+              <!--<p class="oe_view_nocontent_create">-->
+                <!--&lt;!&ndash; Add Text Here &ndash;&gt;-->
+              <!--</p><p>-->
+                <!--&lt;!&ndash; More details about what a user can do with this object will be OK &ndash;&gt;-->
+              <!--</p>-->
+            <!--</field>-->
+        <!--</record>-->
+        <!--&lt;!&ndash; This Menu Item must have a parent and an action &ndash;&gt;-->
+        <!--<menuitem id="Resturant_menu" name="Resturant" parent="hotel_management_services_hotel" action="Resturant_services_hotel" sequence="2"/>-->
+
+
+
+
+        <!--&lt;!&ndash;//================================================================================================================&ndash;&gt;-->
+        <record id="BookingRooms" model="ir.actions.act_window">
+            <field name="name">Booking Rooms</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">hotel_booking_room</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+
+                <p class="oe_view_nocontent_create">
+                    <u>
+                        <i>
+                            <h1>Booking Rooms</h1>
+                        </i>
+                    </u>
+                </p>
+                <p>
+                    You can book rooms
+                </p>
+            </field>
+        </record>
+        <!-- This Menu Item will appear in the Upper bar, That's why It needs NO parent or action -->
+        <menuitem id="root_menu_booking" name="Hotel Management" sequence="1"/>
+        <!-- This Menu Item Must have a parent -->
+        <menuitem id="categ_menus_booking_hotel" name="Hotel Booking" parent="root_menu_booking" sequence="1"/>
+        <menuitem id="categ_menus_booking" name="Reservation" parent="categ_menus_booking_hotel" sequence="1"/>
+        <!-- This Menu Item must have a parent and an action -->
+        <menuitem id="actions_menus_booking" name=" Guest Booking" parent="categ_menus_booking" action="BookingRooms"
+                  sequence="1"/>
+        <!--&lt;!&ndash;//==============================================ROOMS====ROOMS==ROOMS-ROOMS======================================================&ndash;&gt;-->
+
+        <record id="Room_hotel_guest_booking" model="ir.actions.act_window">
+            <field name="name">Rooms</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">room_hotelmanagement</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    <h1>Room Management</h1>
+                </p>
+                <p>
+                    Registration of hotel rooms
+                </p>
+            </field>
+        </record>
+
+        <menuitem id="rooms_booking_guest" name="Hotel Rooms" parent="root_menu_booking" sequence="3"/>
+        <menuitem id="rooms_booking_guest_lists" name="Rooms" parent="rooms_booking_guest" sequence="2"/>
+
+
+        <menuitem id="Room_managemnet_booking" name="Guest Rooms" parent="rooms_booking_guest_lists"
+                  action="Room_hotel_guest_booking" sequence="2"/>
+        <!--&lt;!&ndash;=======================================================================================================&ndash;&gt;-->
+
+
+        <!--<record id="Filter_available" model="ir.actions.act_window">-->
+            <!--<field name="name">Available Rooms</field>-->
+            <!--<field name="type">ir.actions.act_window</field>-->
+            <!--<field name="res_model">room_hotelmanagement</field>-->
+            <!--<field name="view_mode">tree,form</field>-->
+            <!--<field name="domain">[('state','=',False)]</field>-->
+            <!--<field name="help" type="html">-->
+                <!--<p class="oe_view_nocontent_create">-->
+                    <!--&lt;!&ndash; Add Text Here &ndash;&gt;-->
+                <!--</p>-->
+                <!--<p>-->
+                    <!--&lt;!&ndash; More details about what a user can do with this object will be OK &ndash;&gt;-->
+                <!--</p>-->
+            <!--</field>-->
+        <!--</record>-->
+
+
+        <!--&lt;!&ndash; This Menu Item must have a parent and an action &ndash;&gt;-->
+        <!--<menuitem id="Available_Rooms_filter" name="Available Rooms" parent="rooms_booking_guest_lists"-->
+                  <!--action="Filter_available" sequence="2"/>-->
+        <!--&lt;!&ndash;====================================================================================================&ndash;&gt;-->
+        <!--<record id="Filter_available_street" model="ir.actions.act_window">-->
+            <!--<field name="name">Available Rooms on Street</field>-->
+            <!--<field name="type">ir.actions.act_window</field>-->
+            <!--<field name="res_model">room_hotelmanagement</field>-->
+            <!--<field name="view_mode">tree,form</field>-->
+            <!--<field name="domain">[('state','=',False),('room_view','=','s')]</field>-->
+            <!--<field name="help" type="html">-->
+                <!--<p class="oe_view_nocontent_create">-->
+                    <!--&lt;!&ndash; Add Text Here &ndash;&gt;-->
+                <!--</p>-->
+                <!--<p>-->
+                    <!--&lt;!&ndash; More details about what a user can do with this object will be OK &ndash;&gt;-->
+                <!--</p>-->
+            <!--</field>-->
+        <!--</record>-->
+
+
+        <!--&lt;!&ndash; This Menu Item must have a parent and an action &ndash;&gt;-->
+        <!--<menuitem id="Available_Rooms_filter_street" name="Available Rooms on Street" parent="rooms_booking_guest_lists"-->
+                  <!--action="Filter_available_street" sequence="3"/>-->
+        <!--&lt;!&ndash;====================================================================================================&ndash;&gt;-->
+        <!--<record id="Filter_Reserved" model="ir.actions.act_window">-->
+            <!--<field name="name">Reserved Rooms</field>-->
+            <!--<field name="type">ir.actions.act_window</field>-->
+            <!--<field name="res_model">room_hotelmanagement</field>-->
+            <!--<field name="view_mode">tree,form</field>-->
+            <!--<field name="domain">[('state','=',True)]</field>-->
+            <!--<field name="help" type="html">-->
+                <!--<p class="oe_view_nocontent_create">-->
+                    <!--&lt;!&ndash; Add Text Here &ndash;&gt;-->
+                <!--</p>-->
+                <!--<p>-->
+                    <!--&lt;!&ndash; More details about what a user can do with this object will be OK &ndash;&gt;-->
+                <!--</p>-->
+            <!--</field>-->
+        <!--</record>-->
+
+
+        <!--&lt;!&ndash; This Menu Item must have a parent and an action &ndash;&gt;-->
+        <!--<menuitem id="Reserved_Room" name="Reserved Rooms" parent="rooms_booking_guest_lists"-->
+                  <!--action="Filter_Reserved" sequence="4"/>-->
+
+        <!--======================================================================================================-->
+
+    </data>
+
+</openerp>

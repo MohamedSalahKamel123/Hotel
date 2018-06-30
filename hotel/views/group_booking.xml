@@ -1,0 +1,128 @@
+<openerp>
+    <data>
+
+        <record id="group_booking_rooms" model="ir.ui.view">
+            <field name="name">Group Booking</field>
+            <field name="model">group_booking_rooms</field>
+            <field name="arch" type="xml">
+                <form string="Group Booking">
+                    <header>
+                        <field name="workflow" widget="statusbar"/>
+
+                        <button name="getdate_final" type="object" string="Chack date" class="oe_highlight"/>
+                        <button name="confirm_booking" type="object" string="confirmation" class="oe_highlight"/>
+                        <button name="cancel_booking" type="object" string="cancel booking" class="oe_highlight"/>
+                    </header>
+                    <sheet>
+
+                        <field name="image" widget="image" class="oe_avatar"/>
+                        <div class="oe_title">
+                            <label for="name" class="oe_edit_only"/>
+                            <h1>
+                                <field name="emp_name" domain="[('user_id','=',uid)]"
+                                       placeholder="Employee's Name"/>
+                            </h1>
+                        </div>
+
+                        <div>
+
+                            <group>
+                                <group string="Reservation number">
+                                    <field name="filo"/>
+                                </group>
+                                <group string="Reservation Date">
+                                    <field name="book_date"/>
+                                </group>
+                            </group>
+
+                        </div>
+
+                        <group string="Room Type">
+
+                            <field name="booking_type" style="width:400px"/>
+                            <field name="selectrooms" options="{'no_create': True}" widget="many2many_tags"
+                                   style="width:400px"
+                                   domain="[('state', '=',False ), ]"/>
+                        </group>
+
+                        <group string="Booking Date">
+
+                            <group>
+                                <field name="arrive_date"/>
+                                <!--<field name="night_no"/>-->
+                            </group>
+                            <group>
+
+                                <field name="departure_date"/>
+                            </group>
+                        </group>
+                        <group string="Company Informations">
+
+                            <group>
+                                <field name="company_name" style="width:400px"
+
+                                domain="[('Make_reservation', '=',False ), ]"/>
+                            </group>
+
+                            <group>
+                                <!--<field name="group_num"/>-->
+                            </group>
+                            <group>
+                                <field name="night_no"/>
+                                <field name="total"/>
+                                <field name="total_price"/>
+                            </group>
+
+                        </group>
+
+                        <notebook>
+
+                        </notebook>
+
+
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <!--=============================================================================================-->
+
+        <record id="tree_form_group_booking" model="ir.ui.view">
+            <field name="name">Group Booking</field>
+            <field name="model">group_booking_rooms</field>
+            <field name="arch" type="xml">
+                <tree string="Group Booking">
+                    <field name="emp_name"/>
+                    <field name="book_date"/>
+                    <field name="booking_type"/>
+                    <field name="arrive_date"/>
+                    <field name="departure_date"/>
+                    <field name="company_name"/>
+
+
+                </tree>
+            </field>
+        </record>
+
+
+        <!--=============================================================================================-->
+        <!-- This Menu Item must have a parent and an action -->
+        <record id="group_hotel_reserv" model="ir.actions.act_window">
+            <field name="name">Group Booking</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">group_booking_rooms</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    <!-- Add Text Here -->
+                </p>
+                <p>
+                    <!-- More details about what a user can do with this object will be OK -->
+                </p>
+            </field>
+        </record>
+
+        <menuitem id="group_booking_reservition" name="Group Booking" parent="categ_menus_booking"
+                  action="group_hotel_reserv" sequence="3"/>
+
+    </data>
+</openerp>
